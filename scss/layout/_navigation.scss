@@ -1,4 +1,5 @@
 @use '../base/colors';
+
 .header{
     padding: 20px;
 }
@@ -16,7 +17,17 @@
     display: none;
 }
 
-.menu__item  {
-   
+.menu__item {
+   text-decoration: none;
+   color: colors.$color-text;
+   list-style: none;
+}
 
+.menu__item a {
+    text-decoration: none;
+    color: colors.$color-text;
+}
+
+.menu__icon {
+    padding: 20px;
 }

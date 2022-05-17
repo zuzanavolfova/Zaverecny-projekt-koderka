@@ -9,6 +9,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -48,4 +49,19 @@ h1 {
 
 .menu__list {
   display: none;
+}
+
+.menu__item {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  list-style: none;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+.menu__icon {
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
