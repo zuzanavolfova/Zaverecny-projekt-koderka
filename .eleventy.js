@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
     // Zkopirovat download do _site/dowload
     eleventyConfig.addPassthroughCopy("download");
 
+    eleventyConfig.addPassthroughCopy("javaScript");
+
   return {
     // možné formáty šablon
     templateFormats: ["njk", "html", "md", "liquid"],

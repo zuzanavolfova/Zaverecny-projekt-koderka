@@ -44,4 +44,8 @@ h1 {
   border: 0;
   border-radius: 4px;
   font-size: 20px;
+}
+
+.menu__list {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

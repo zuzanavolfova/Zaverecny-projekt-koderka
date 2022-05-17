@@ -10,9 +10,14 @@
 	<link rel="stylesheet" href="css/style.css">
     <title>{{title}}</title>
 </head>
+<body>
 
 {% include 'partials/menu.njk' %}
 
 {{content | safe }}
 
 {% include 'partials/footer.njk' %}
+
+<script src="/javaScript/menu.js"></script>
+
+</body>
