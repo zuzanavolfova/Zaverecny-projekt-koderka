@@ -13,4 +13,17 @@ h1 {
 .footer {
   color: white;
   background-color: #0097A7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.footer__contact p {
+  margin: 0;
+}
+
+.footer__uppercase {
+  text-transform: uppercase;
+  line-height: 2;
 }/*# sourceMappingURL=style.css.map */

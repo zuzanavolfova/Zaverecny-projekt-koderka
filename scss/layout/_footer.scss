@@ -3,4 +3,17 @@
 .footer {
     color: white;
     background-color: colors.$color-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer__contact p {
+    margin: 0;
+}
+
+.footer__uppercase {
+    text-transform: uppercase;
+    line-height: 2;
 }
