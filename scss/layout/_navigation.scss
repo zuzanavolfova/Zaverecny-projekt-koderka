@@ -16,6 +16,12 @@
 .menu__list {
     display: none;
     padding: 0;
+    margin: 0;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px grey;
+    background-color: white;
+    position: absolute;
 }
 
 .menu__item {
@@ -36,5 +42,3 @@
     margin-right: 10px;
     width: 46px;
 }
-
-
