@@ -11,5 +11,8 @@
     <title>{{title}}</title>
 </head>
 
+{% include 'partials/menu.njk' %}
 
-{{content|safe}}
+{{content | safe }}
+
+{% include 'partials/footer.njk' %}

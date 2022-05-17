@@ -1,0 +1,6 @@
+@use '../base/colors';
+
+.footer {
+    color: white;
+    background-color: colors.$color-primary;
+}
