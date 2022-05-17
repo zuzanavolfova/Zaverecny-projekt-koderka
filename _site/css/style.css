@@ -60,8 +60,11 @@ h1 {
 .menu__item a {
   text-decoration: none;
   color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
 }
 
 .menu__icon {
-  padding: 20px;
+  padding: 0 20px;
+  width: 80px;
 }/*# sourceMappingURL=style.css.map */

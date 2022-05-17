@@ -26,8 +26,13 @@
 .menu__item a {
     text-decoration: none;
     color: colors.$color-text;
+    display: flex;
+    align-items: center;
 }
 
 .menu__icon {
-    padding: 20px;
+    padding: 0 20px;
+    width: 80px;
 }
+
+
