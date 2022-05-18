@@ -75,4 +75,23 @@ h1 {
   padding: 10px 10px;
   margin-right: 10px;
   width: 46px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/images/background/background-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header__logo {
+  max-width: 260px;
+}
+.header__search {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: fit;
+     object-fit: fit;
 }/*# sourceMappingURL=style.css.map */

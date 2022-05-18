@@ -8,12 +8,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/glide.core.css">
+	<link rel="stylesheet" href="css/glide.theme.css">
+ 
+
     <title>Kreativní tvoření</title>
 </head>
 <body>
 
 <header class="header">
-    <nav class="menu">
+        <nav class="menu">
         <button class="menu__button" onclick="menu()">
             Menu
         </button>
@@ -30,7 +35,36 @@
 
     
 
+
+    <img class="header__logo" src="/images/logo.png" alt="logo">
+    <img class="header__search" src="/images/icons/search-icon.png" alt="vyhledavani">  
+
 </header>
+<div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="/images/carousel/branches.JPG" alt="vetvicky"></li>
+        <li class="glide__slide"><img src="/images/carousel//butterfly.JPG" alt="motyl"></li>
+        <li class="glide__slide"><img src="/images/carousel/detail.JPG" alt="detail"></li>
+        <li class="glide__slide"><img src="/images/carousel/egg.JPG" alt="vajicko"></li>
+        <li class="glide__slide"><img src="/images/carousel/eggs.JPG" alt="vajicka"></li>
+        <li class="glide__slide"><img src="/images/carousel/meadow.JPG" alt="louka"></li>
+        <li class="glide__slide"><img src="/images/carousel//spring.JPG" alt="jaro"></li>
+      </ul>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+			<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+			<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+		</div>
+    
+</div>
+
+
+
+
+
+
 
 
 
@@ -52,5 +86,15 @@
 
 
 <script src="/javaScript/menu.js"></script>
+<script src="javaScript/glide.min.js"></script>
+
+<script>
+  new Glide('.glide', {
+	  autoplay: 2000,
+	  perView: 1,
+	  type: 'carousel',
+
+  }).mount()
+</script>
 
 </body>
