@@ -94,4 +94,11 @@ h1 {
   height: 36px;
   -o-object-fit: fit;
      object-fit: fit;
+}
+
+.glide__slide {
+  background-color: white;
+}
+.glide__slide img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
