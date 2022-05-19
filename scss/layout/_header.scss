@@ -6,13 +6,13 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    padding: 20px;
+    
     &__logo {
         max-width: 260px;
     }
     &__search {
-        width: 36px;
-        height: 36px;
-        object-fit:fit;
+        width: 40px;
+    
     }
 }

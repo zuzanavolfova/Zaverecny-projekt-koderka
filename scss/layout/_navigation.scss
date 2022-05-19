@@ -1,19 +1,21 @@
 @use '../base/colors';
+@use '../base/screens';
 
-.header{
-    padding: 20px;
-}
 
-.menu__button {
+// screen mobile
+.menu-mobile__button {
     padding: 10px 15px;
     background-color: colors.$color-primary;
     color: white;
     border: 0;
     border-radius: 4px;
     font-size: 20px;
+    @media screen and (min-width: screens.$screen-tablet){
+       display: none; 
+    }
 }
 
-.menu__list {
+.menu-mobile__list {
     display: none;
     padding: 10px;
     margin: 0;
@@ -24,21 +26,39 @@
     position: absolute;
 }
 
-.menu__item {
+.menu-mobile__item {
    text-decoration: none;
    color: colors.$color-text;
    list-style: none;
 }
 
-.menu__item a {
+.menu-mobile__item a {
     text-decoration: none;
     color: colors.$color-text;
     display: flex;
     align-items: center;
 }
 
-.menu__icon {
+.menu-mobile__icon {
     padding: 10px 10px;
     margin-right: 10px;
     width: 46px;
 }
+
+// screen desktop
+.menu-desktop__list {
+        display: none;
+        @media screen and (min-width: screens.$screen-tablet){
+        display: flex; 
+        justify-content: space-between;
+        padding: 0;
+        }
+    }
+.menu-desktop__item  {
+        list-style: none;
+        background-color: colors.$color-primary;
+    }
+.menu-desktop__item a {
+        color: white;
+        text-decoration: none;
+    }

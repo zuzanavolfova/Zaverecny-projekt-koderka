@@ -34,11 +34,7 @@ h1 {
   line-height: 2;
 }
 
-.header {
-  padding: 20px;
-}
-
-.menu__button {
+.menu-mobile__button {
   padding: 10px 15px;
   background-color: #0097A7;
   color: white;
@@ -46,8 +42,13 @@ h1 {
   border-radius: 4px;
   font-size: 20px;
 }
+@media screen and (min-width: 640px) {
+  .menu-mobile__button {
+    display: none;
+  }
+}
 
-.menu__list {
+.menu-mobile__list {
   display: none;
   padding: 10px;
   margin: 0;
@@ -58,23 +59,44 @@ h1 {
   position: absolute;
 }
 
-.menu__item {
+.menu-mobile__item {
   text-decoration: none;
   color: rgb(50, 50, 50);
   list-style: none;
 }
 
-.menu__item a {
+.menu-mobile__item a {
   text-decoration: none;
   color: rgb(50, 50, 50);
   display: flex;
   align-items: center;
 }
 
-.menu__icon {
+.menu-mobile__icon {
   padding: 10px 10px;
   margin-right: 10px;
   width: 46px;
+}
+
+.menu-desktop__list {
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .menu-desktop__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.menu-desktop__item {
+  list-style: none;
+  background-color: #0097A7;
+}
+
+.menu-desktop__item a {
+  color: white;
+  text-decoration: none;
 }
 
 .header {
@@ -85,15 +107,13 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 20px;
 }
 .header__logo {
   max-width: 260px;
 }
 .header__search {
-  width: 36px;
-  height: 36px;
-  -o-object-fit: fit;
-     object-fit: fit;
+  width: 40px;
 }
 
 .glide__slide {
