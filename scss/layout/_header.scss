@@ -1,7 +1,48 @@
+@use '../base/screens';
+
+//layout header
+.menu-desktop {
+    display: none;
+}
+
 .header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
     align-items: center;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-areas:
+        "menu logo search";
+    &__about {
+        display:none;
+    }
+    &__space {
+        display: none;
+    }
+    @media screen and (min-width: screens.$screen-tablet){
+        .menu-mobile__button {
+            display: none; 
+         }
+        .menu-desktop {
+            display:flex;
+        }
+        grid-template-columns: 700px 1fr 80px 80px ;
+        grid-template-rows:60px 40px ;
+        grid-template-areas:
+            "logo logo       logo  logo  "
+            "menu whitespace about search";
+        &__about {
+            display:flex;
+            grid-area: about;
+        }
+        &__space {
+            display: flex;
+            grid-area: whitespace;
+        }
+        .menu-desktop {
+            grid-area: menu;
+        }
+    }
+
     background-image: url(/images/background/background-header.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -10,9 +51,14 @@
     
     &__logo {
         max-width: 260px;
+        padding: 0 20px;
+        grid-area: logo;
     }
     &__search {
         width: 40px;
-    
+        grid-area: search;
     }
 }
+
+
+    

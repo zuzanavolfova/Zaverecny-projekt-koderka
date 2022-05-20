@@ -1,8 +1,9 @@
 @use '../base/colors';
 @use '../base/screens';
 
+//UI menu
 
-// screen mobile
+// screen mobile menu
 .menu-mobile__button {
     padding: 10px 15px;
     background-color: colors.$color-primary;
@@ -10,9 +11,7 @@
     border: 0;
     border-radius: 4px;
     font-size: 20px;
-    @media screen and (min-width: screens.$screen-tablet){
-       display: none; 
-    }
+    grid-area: menu;
 }
 
 .menu-mobile__list {
@@ -45,15 +44,12 @@
     width: 46px;
 }
 
-// screen desktop
+// screen desktop menu
+
 .menu-desktop__list {
-        display: none;
-        @media screen and (min-width: screens.$screen-tablet){
-        display: flex; 
-        justify-content: space-between;
-        padding: 0;
-        }
+    padding: 0;
     }
+    
 .menu-desktop__item  {
         list-style: none;
         background-color: colors.$color-primary;
