@@ -56,6 +56,9 @@
         max-width: 260px;
         padding: 0 20px;
         grid-area: logo;
+        @media screen and (min-width: screens.$screen-tablet){
+            padding: 0;
+        }
         @media screen and (min-width: screens.$screen-desktop){
             justify-self: center;
         }
