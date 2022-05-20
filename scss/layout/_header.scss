@@ -35,7 +35,7 @@
             grid-area: menu;
         }
     }
-    
+
     @media screen and (min-width: screens.$screen-desktop){
         grid-template-columns: 700px 1fr 80px 80px ;
         grid-template-rows:60px 40px ;
@@ -48,6 +48,7 @@
         & a {
             color: colors.$color-primary;
             text-decoration: none;
+            font-size: 18px;
         }
         @media screen and (min-width: screens.$screen-tablet){
             display:grid;
