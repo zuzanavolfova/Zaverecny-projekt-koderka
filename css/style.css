@@ -7,8 +7,9 @@ html {
 }
 
 body {
+  max-width: 1200px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
 
@@ -193,6 +194,7 @@ h1 {
 
 .glide__slide {
   background-color: white;
+  max-height: 500px;
 }
 .glide__slide img {
   width: 100%;
