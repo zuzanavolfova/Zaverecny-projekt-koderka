@@ -174,7 +174,7 @@ h1 {
   }
 }
 .header__logo {
-  max-width: 200px;
+  max-width: 160px;
   padding: 0;
   grid-area: logo;
 }
