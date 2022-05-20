@@ -12,33 +12,57 @@
     grid-template-columns: 80px 1fr 80px;
     grid-template-areas:
         "menu logo search";
-    &__about {
-        display:none;
-    }
-    &__space {
-        display: none;
-    }
+
     @media screen and (min-width: screens.$screen-tablet){
+         justify-items: start;
+         grid-template-columns: 1fr 80px 80px ;
+         grid-template-rows: 60px 40px;
+         grid-template-areas:
+            "logo about search"
+            "menu menu menu";
+        
         .menu-mobile__button {
             display: none; 
          }
+        .menu-desktop {
+            display:flex;
+            grid-area: menu;
+        }
+    }
+    @media screen and (min-width: screens.$screen-desktop){
+       
         grid-template-columns: 700px 1fr 80px 80px ;
         grid-template-rows:60px 40px ;
         grid-template-areas:
             "logo logo       logo  logo  "
             "menu whitespace about search";
-        &__about {
+       
+        
+    }
+     &__about {
+        display:none;
+        @media screen and (min-width: screens.$screen-tablet){
             display:flex;
             grid-area: about;
         }
-        &__space {
-            display: flex;
+    }
+    &__space {
+        display: none;
+        @media screen and (min-width: screens.$screen-desktop){            display: flex;
             grid-area: whitespace;
         }
-        .menu-desktop {
-            display:flex;
-            grid-area: menu;
+    }
+    &__logo {
+        max-width: 260px;
+        padding: 0 20px;
+        grid-area: logo;
+        @media screen and (min-width: screens.$screen-desktop){
+            justify-self: center;
         }
+    }
+    &__search {
+        width: 40px;
+        grid-area: search;
     }
 
     background-image: url(/images/background/background-header.png);
@@ -46,16 +70,6 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    
-    &__logo {
-        max-width: 260px;
-        padding: 0 20px;
-        grid-area: logo;
-    }
-    &__search {
-        width: 40px;
-        grid-area: search;
-    }
 }
 
 

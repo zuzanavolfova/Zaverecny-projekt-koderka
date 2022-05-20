@@ -48,11 +48,18 @@
 
 .menu-desktop__list {
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; 
+    gap:10px;
+    @media screen and (min-width: screens.$screen-desktop){
+        gap:20px;
     }
-    
+}    
 .menu-desktop__item  {
         list-style: none;
         background-color: colors.$color-primary;
+        padding: 10px 5px 10px 30px;
     }
 .menu-desktop__item a {
         color: white;
