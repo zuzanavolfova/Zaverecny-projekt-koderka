@@ -22,9 +22,6 @@
         .menu-mobile__button {
             display: none; 
          }
-        .menu-desktop {
-            display:flex;
-        }
         grid-template-columns: 700px 1fr 80px 80px ;
         grid-template-rows:60px 40px ;
         grid-template-areas:
@@ -39,6 +36,7 @@
             grid-area: whitespace;
         }
         .menu-desktop {
+            display:flex;
             grid-area: menu;
         }
     }

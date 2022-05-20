@@ -74,10 +74,6 @@ h1 {
   width: 46px;
 }
 
-.menu-desktop {
-  display: none;
-}
-
 .menu-desktop__list {
   padding: 0;
 }
@@ -123,9 +119,6 @@ h1 {
   .header .menu-mobile__button {
     display: none;
   }
-  .header .menu-desktop {
-    display: flex;
-  }
   .header__about {
     display: flex;
     grid-area: about;
@@ -135,6 +128,7 @@ h1 {
     grid-area: whitespace;
   }
   .header .menu-desktop {
+    display: flex;
     grid-area: menu;
   }
 }
