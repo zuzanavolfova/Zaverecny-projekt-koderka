@@ -1,4 +1,5 @@
 @use '../base/screens';
+@use '../base/colors';
 
 //layout header
 .menu-desktop {
@@ -21,9 +22,14 @@
             "logo about search"
             "menu menu menu";
         
-        .menu-mobile__button {
+        .menu-mobile {
+            &__button {
             display: none; 
-         }
+            }
+            &__list {
+                display: none;
+            }
+        }
         .menu-desktop {
             display:flex;
             grid-area: menu;
@@ -41,23 +47,32 @@
     }
      &__about {
         display:none;
+        & a {
+            color: colors.$color-primary;
+            text-decoration: none;
+        }
         @media screen and (min-width: screens.$screen-tablet){
-            display:flex;
+            display:grid;
             grid-area: about;
         }
+        @media screen and (min-width: screens.$screen-desktop){
+            align-self: end;
+        }
+        
     }
     &__space {
         display: none;
-        @media screen and (min-width: screens.$screen-desktop){            display: flex;
-            grid-area: whitespace;
-        }
+        @media screen and (min-width: screens.$screen-desktop){
+            display: flex;
+            grid-area: whitespace;        }
     }
     &__logo {
         max-width: 260px;
         padding: 0 20px;
         grid-area: logo;
         @media screen and (min-width: screens.$screen-tablet){
-            padding: 0;
+            padding: 20px 0 0 16px;
+            margin-bottom: 20px;
         }
         @media screen and (min-width: screens.$screen-desktop){
             justify-self: center;
@@ -66,6 +81,8 @@
     &__search {
         width: 40px;
         grid-area: search;
+        
+       
     }
 
     background-image: url(/images/background/background-header.png);

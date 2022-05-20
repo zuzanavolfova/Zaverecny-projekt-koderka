@@ -79,23 +79,27 @@ h1 {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
-@media screen and (min-width: 900px) {
-  .menu-desktop__list {
-    gap: 20px;
-  }
-}
-
 .menu-desktop__item {
+  text-align: center;
   list-style: none;
-  background-color: #0097A7;
-  padding: 10px 5px 10px 30px;
+  padding-top: 20px;
 }
 
 .menu-desktop__item a {
-  color: white;
+  width: 100%;
+  color: #0097A7;
+  font-weight: 500;
   text-decoration: none;
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+.menu-desktop__item a:hover {
+  border: 1px solid rgba(0, 151, 167, 0.6);
 }
 
 .menu-desktop {
@@ -124,6 +128,9 @@ h1 {
   .header .menu-mobile__button {
     display: none;
   }
+  .header .menu-mobile__list {
+    display: none;
+  }
   .header .menu-desktop {
     display: flex;
     grid-area: menu;
@@ -139,10 +146,19 @@ h1 {
 .header__about {
   display: none;
 }
+.header__about a {
+  color: #0097A7;
+  text-decoration: none;
+}
 @media screen and (min-width: 600px) {
   .header__about {
-    display: flex;
+    display: grid;
     grid-area: about;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header__about {
+    align-self: end;
   }
 }
 .header__space {
@@ -161,7 +177,8 @@ h1 {
 }
 @media screen and (min-width: 600px) {
   .header__logo {
-    padding: 0;
+    padding: 20px 0 0 16px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 900px) {

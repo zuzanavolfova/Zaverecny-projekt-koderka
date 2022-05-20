@@ -51,17 +51,30 @@
     margin: 0;
     display: flex;
     justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    
     gap:10px;
     @media screen and (min-width: screens.$screen-desktop){
-        gap:20px;
+        // gap:20px;
     }
 }    
 .menu-desktop__item  {
-        list-style: none;
-        background-color: colors.$color-primary;
-        padding: 10px 5px 10px 30px;
+    text-align: center;
+    list-style: none;
+    padding-top: 20px;
+       
     }
 .menu-desktop__item a {
-        color: white;
+    width: 100%;
+        color: colors.$color-primary;
+        font-weight: 500;
         text-decoration: none;
+        background-color: white;
+        padding: 10px 16px;
+        border-radius: 4px;
+    &:hover {
+        border: 1px solid colors.$color-border-light;
+    }    
+        
     }
