@@ -6,15 +6,34 @@
 .navigation {
     display:flex;
     flex-wrap: wrap;
+    padding: 20px 0;
+    @media screen and (min-width: screens.$screen-tablet){
+        padding: 20px 0;
+    }
+    @media screen and (min-width: screens.$screen-desktop){
+        padding: 40px 0;
+    }
     &__item {
-        margin-top: 40px;
         flex-basis: 100%;
         flex-grow: 1;
         background-color: white;
         text-align: right;
         padding: 80px 0 60px 0;
+        margin: 10px 0;
         text-decoration: none;
+        @media screen and (min-width: screens.$screen-tablet){
+           flex-basis: 20%;
+           margin: 0 10px;
+           border-radius: 4px;
+        }
+        @media screen and (min-width: screens.$screen-desktop){
+            flex-basis: 40%;
+            padding: 100px 0 60px 0;
+            margin: 20px;
+
+        }
     }
+
     &__text {
         text-decoration: none;
         color: white;
@@ -22,6 +41,9 @@
         font-size: 18px;
         background-color: colors.$color-primary;
         border-radius: 4px 0 0 4px ;
+        @media screen and (min-width: screens.$screen-desktop){
+            font-size: 20px;
+        }
     }  
     &__background1 {
         background-image: url(/images/background/navigation-spring-small.JPG);
