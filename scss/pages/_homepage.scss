@@ -1,0 +1,28 @@
+@use '../base/colors';
+@use '../base/screens';
+@use '../base/typography';
+@use '../base/basic';
+
+.navigation {
+    display:flex;
+    flex-wrap: wrap;
+    &__item {
+        flex-basis: 100%;
+        flex-grow: 1;
+        background-color: white;
+        text-align: right;
+        padding: 60px 20px;
+        text-decoration: none;
+    }
+    &__text {
+        text-decoration: none;
+        color: white;
+        background-color: colors.$color-primary;
+    }  
+    &__background1 {
+        background-image: url(/images/background/navigation-jaro-small.JPG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

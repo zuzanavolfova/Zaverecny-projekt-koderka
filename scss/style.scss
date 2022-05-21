@@ -1,7 +1,10 @@
 @use 'base/basic';
 @use 'base/typography';
 @use 'layout/footer';
-@use 'layout/navigation';
+@use 'layout/menu';
 @use 'layout/header';
-@use 'components/carousel'
+@use 'components/carousel';
+@use 'pages/homepage'
+
+
 

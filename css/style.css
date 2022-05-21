@@ -201,4 +201,28 @@ h1 {
 }
 .glide__slide img {
   width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation__item {
+  flex-basis: 100%;
+  flex-grow: 1;
+  background-color: white;
+  text-align: right;
+  padding: 60px 20px;
+  text-decoration: none;
+}
+.navigation__text {
+  text-decoration: none;
+  color: white;
+  background-color: #0097A7;
+}
+.navigation__background1 {
+  background-image: url(/images/background/navigation-jaro-small.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
