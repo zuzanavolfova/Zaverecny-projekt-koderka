@@ -75,7 +75,11 @@
     margin: 0;
     padding: 20px 10px 0 10px;
     @media screen and (min-width: screens.$screen-tablet){
-    font-size: 20px;
-    padding-top: 40px;
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    @media screen and (min-width: screens.$screen-desktop){
+        font-size: 32px;
+        font-weight: 300;
     }
 }
