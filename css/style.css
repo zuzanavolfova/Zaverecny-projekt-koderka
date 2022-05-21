@@ -208,20 +208,42 @@ h1 {
   flex-wrap: wrap;
 }
 .navigation__item {
+  margin-top: 40px;
   flex-basis: 100%;
   flex-grow: 1;
   background-color: white;
   text-align: right;
-  padding: 60px 20px;
+  padding: 80px 0 60px 0;
   text-decoration: none;
 }
 .navigation__text {
   text-decoration: none;
   color: white;
+  padding: 5px 10px;
+  font-size: 18px;
   background-color: #0097A7;
+  border-radius: 4px 0 0 4px;
 }
 .navigation__background1 {
   background-image: url(/images/background/navigation-jaro-small.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navigation__background2 {
+  background-image: url(/images/background/navigation-leto-small.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navigation__background3 {
+  background-image: url(/images/background/navigation-podzim-small.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navigation__background4 {
+  background-image: url(/images/background/navigation-zima-small.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
