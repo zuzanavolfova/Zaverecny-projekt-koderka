@@ -283,7 +283,8 @@ h1 {
 }
 
 .description {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 300;
   color: #0097A7;
   text-align: center;
   margin: 0;
@@ -291,13 +292,12 @@ h1 {
 }
 @media screen and (min-width: 650px) {
   .description {
-    font-size: 20px;
+    font-size: 26px;
     padding-top: 40px;
   }
 }
 @media screen and (min-width: 900px) {
   .description {
     font-size: 32px;
-    font-weight: 300;
   }
 }/*# sourceMappingURL=style.css.map */
