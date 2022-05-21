@@ -1,13 +1,13 @@
 @use '../base/colors';
 
 .footer {
-    color: white;
-    background-color: colors.$color-primary;
+    color: colors.$color-text;
+    font-size: 12px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-radius: 4px 4px 0 0 ;
+    border-top: 1px solid colors.$color-primary;
 }
 
 .footer__contact p {

@@ -29,13 +29,13 @@ h1 {
 }
 
 .footer {
-  color: white;
-  background-color: #0097A7;
+  color: rgb(50, 50, 50);
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-radius: 4px 4px 0 0;
+  border-top: 1px solid #0097A7;
 }
 
 .footer__contact p {
@@ -194,20 +194,25 @@ h1 {
   }
 }
 .header__logo {
-  max-width: 160px;
-  padding: 0;
+  padding: 10px 20px;
   grid-area: logo;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Parisienne", cursive;
+  color: rgb(50, 50, 50);
 }
 @media screen and (min-width: 650px) {
   .header__logo {
-    padding: 20px 0 0 16px;
+    padding: 40px 0 20px 20px;
     margin-bottom: 20px;
-    max-width: 260px;
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 900px) {
   .header__logo {
     justify-self: center;
+    font-size: 42px;
+    padding: 40px 0;
   }
 }
 .header__search {
@@ -296,8 +301,9 @@ h1 {
 
 .description {
   font-size: 20px;
-  font-weight: 300;
-  color: #0097A7;
+  font-weight: 400;
+  font-family: "Parisienne", cursive;
+  color: rgb(50, 50, 50);
   text-align: center;
   margin: 0;
   padding: 20px 10px 0 10px;
@@ -310,6 +316,6 @@ h1 {
 }
 @media screen and (min-width: 900px) {
   .description {
-    font-size: 32px;
+    font-size: 36px;
   }
 }/*# sourceMappingURL=style.css.map */
