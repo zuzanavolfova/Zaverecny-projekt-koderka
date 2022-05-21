@@ -226,25 +226,25 @@ h1 {
   border-radius: 4px 0 0 4px;
 }
 .navigation__background1 {
-  background-image: url(/images/background/navigation-jaro-small.JPG);
+  background-image: url(/images/background/navigation-spring-small.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .navigation__background2 {
-  background-image: url(/images/background/navigation-leto-small.JPG);
+  background-image: url(/images/background/navigation-summer-small.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .navigation__background3 {
-  background-image: url(/images/background/navigation-podzim-small.JPG);
+  background-image: url(/images/background/navigation-autumn-small.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .navigation__background4 {
-  background-image: url(/images/background/navigation-zima-small.JPG);
+  background-image: url(/images/background/navigation-winter-small.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
