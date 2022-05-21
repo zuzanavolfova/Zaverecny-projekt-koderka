@@ -1,5 +1,6 @@
 @use 'colors';
 @use 'typography';
+@use '../base/screens';
 
 
 html {
@@ -11,6 +12,14 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
+    @media screen and (min-width: 1400px){
+        background-image: url(/images/background/background-butterfly.png);
+        background-size: cover;
+    }
+}
+.kontejner {
     max-width: 1200px;
     padding: 0;
     margin: 0 auto;
@@ -20,4 +29,6 @@ body {
 h1 {
     color: colors.$color-primary;
 }
+
+
 

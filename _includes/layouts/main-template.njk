@@ -14,15 +14,16 @@
 	<link rel="stylesheet" href="css/glide.theme.css">
     
     <title> {{title}} </title>
-<body>
 
+<body>
+<div class="kontejner">
     {% include 'partials/header.njk' %}
 
     {{content | safe }} 
 
 
     {% include 'partials/footer.njk' %}
-
+</div>
     <script src="/javaScript/menu.js"></script>
     <script src="javaScript/glide.min.js"></script>
     
