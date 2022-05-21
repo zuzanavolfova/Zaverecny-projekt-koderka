@@ -120,7 +120,7 @@ h1 {
   background-position: center;
   padding: 20px 20px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .header {
     justify-items: start;
     grid-template-columns: 1fr 80px 80px;
@@ -153,7 +153,7 @@ h1 {
   text-decoration: none;
   font-size: 18px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .header__about {
     display: grid;
     grid-area: about;
@@ -178,7 +178,7 @@ h1 {
   padding: 0;
   grid-area: logo;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .header__logo {
     padding: 20px 0 0 16px;
     margin-bottom: 20px;
@@ -206,16 +206,11 @@ h1 {
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 10px 0;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .navigation {
     padding: 20px 0;
-  }
-}
-@media screen and (min-width: 900px) {
-  .navigation {
-    padding: 40px 0;
   }
 }
 .navigation__item {
@@ -227,7 +222,7 @@ h1 {
   margin: 10px 0;
   text-decoration: none;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .navigation__item {
     flex-basis: 20%;
     margin: 0 10px;
@@ -277,4 +272,18 @@ h1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.description {
+  font-size: 18px;
+  color: #0097A7;
+  text-align: center;
+  margin: 0;
+  padding: 20px 10px 0 10px;
+}
+@media screen and (min-width: 650px) {
+  .description {
+    font-size: 20px;
+    padding-top: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
