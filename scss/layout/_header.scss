@@ -71,9 +71,9 @@
         padding: 10px 20px;
         grid-area: logo;
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 200;
         font-family: typography.$font-secondary;
-        color: colors.$color-text;
+        color: colors.$color-logo;
         @media screen and (min-width: screens.$screen-tablet){
             padding: 40px 0 20px 20px;
             margin-bottom: 20px;

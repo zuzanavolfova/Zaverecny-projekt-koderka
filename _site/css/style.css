@@ -203,9 +203,9 @@ h1 {
   padding: 10px 20px;
   grid-area: logo;
   font-size: 26px;
-  font-weight: 400;
-  font-family: "Parisienne", cursive;
-  color: rgb(50, 50, 50);
+  font-weight: 200;
+  font-family: "Playball", cursive;
+  color: rgb(123, 123, 123);
 }
 @media screen and (min-width: 650px) {
   .header__logo {
@@ -307,8 +307,8 @@ h1 {
 
 .description {
   font-size: 20px;
-  font-weight: 400;
-  font-family: "Parisienne", cursive;
+  font-weight: 200;
+  font-family: "Playball", cursive;
   color: rgb(50, 50, 50);
   text-align: center;
   margin: 0;
