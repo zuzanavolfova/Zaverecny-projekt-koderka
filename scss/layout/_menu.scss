@@ -1,5 +1,5 @@
 @use '../base/colors';
-@use '../base/screens';
+@use '../abstracts/mixins';
 
 //UI menu
 
@@ -71,7 +71,7 @@
         background-color: white;
         padding: 10px 16px;
         border-radius: 4px;
-        @media screen and (min-width: screens.$screen-desktop){
+        @include desktop{
             font-size: 20px;
         }
         
