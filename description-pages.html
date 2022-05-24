@@ -1,9 +1,36 @@
-<!-- ---
-layout: layouts/main-templaty.njk
+---
+layout: layouts/main-template.njk
 pagination:
-  data: zvirata
+  data: list
   size: 1
-  alias: zvire
-permalink: "zvirata/{{ zvire.nazev | slug }}/"
---- -->
+  alias: instruction
+permalink: "jaro/{{ instruction.spring.name | slug }}/"
+---
+<a class="back" href="/"> ← zpět</a>
+<h1 class="title-list">{{instruction.spring.name}}</h1>
 
+<div class="instruction">
+    <section class="instruction__description">
+        <img class="instruction__image-main" src="/images/small/{{instruction.spring.profileImage}}" alt="instruction.spring.name">
+        <table class="instruction__basic-info">
+                        <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{instruction.spring.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{instruction.spring.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{instruction.spring.age}}</td>
+            </tr>
+        </table>
+    </section> 
+    <section class="instruction__text">
+        <p>{{instruction.spring.text}}</p>
+    </section>
+    <section class="instruction__images">
+
+    </section>
+</div>
