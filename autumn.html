@@ -1,0 +1,34 @@
+---
+layout: layouts/main-template.njk
+title: Podzim
+---
+
+<!-- Zpet -->
+<h1>Podzimní tvoření</h1>
+
+<div class="list">
+{% for itemAutumn in autumn %}
+
+    <a class="list__item" href="#">
+        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr>
+                <th class="list__name">{{itemAutumn.name}}</th>
+            </tr>
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemAutumn.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemAutumn.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemAutumn.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %}    
+</div>
+   

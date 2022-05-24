@@ -1,0 +1,34 @@
+---
+layout: layouts/main-template.njk
+title: Léto
+---
+
+<!-- Zpet -->
+<h1>Letní tvoření</h1>
+
+<div class="list">
+{% for itemSummer in summer %}
+
+    <a class="list__item" href="#">
+        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr>
+                <th class="list__name">{{itemSummer.name}}</th>
+            </tr>
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemSummer.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemSummer.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemSummer.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %}    
+</div>
+   
