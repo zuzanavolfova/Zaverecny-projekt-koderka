@@ -110,8 +110,8 @@ h1 {
   padding-top: 20px;
 }
 
-.menu-desktop__item--active {
-  font-weight: bold;
+.menu-desktop__item--active .menu-desktop__link {
+  border: 1px solid rgba(0, 151, 167, 0.6);
 }
 
 .menu-desktop__item a {
