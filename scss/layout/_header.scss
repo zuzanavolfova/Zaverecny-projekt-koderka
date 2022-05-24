@@ -69,12 +69,14 @@
             grid-area: whitespace;        }
     }
     &__logo {
+        @include mixins.link;
         padding: 10px 20px;
         grid-area: logo;
         font-size: 26px;
         font-weight: 200;
         font-family: typography.$font-secondary;
         color: colors.$color-logo;
+        
         @include mixins.tablet{
             padding: 40px 0 20px 20px;
             margin-bottom: 20px;

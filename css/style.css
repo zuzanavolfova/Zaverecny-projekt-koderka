@@ -212,6 +212,8 @@ h1 {
   }
 }
 .header__logo {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
   padding: 10px 20px;
   grid-area: logo;
   font-size: 26px;
