@@ -1,15 +1,58 @@
 { "spring": [
-    {
+        {
         "name": "Motyl",
         "technique": "Tempera",
         "duration": "30 min",
         "age": "od 2 let"
-    },
+        },
         {
-            "name": "Pokus",
-            "technique": "Tempera",
-            "duration": "30 min",
-            "age": "od 2 let"
+        "name": "Pokus",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
+        }  
+    ],
+
+    "summer": [
+        {
+        "name": "Motyl",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
+        },
+        {
+        "name": "Pokus",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
+        }  
+    ],
+    "autumn": [
+        {
+        "name": "Motyl",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
+        },
+        {
+        "name": "Pokus",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
+        }  
+    ],
+    "winter": [
+        {
+        "name": "Motyl",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
+        },
+        {
+        "name": "Opravva",
+        "technique": "Tempera",
+        "duration": "30 min",
+        "age": "od 2 let"
         }  
     ]
 }
