@@ -1,4 +1,4 @@
-{ "spring": [
+{   "spring": [
         {
         "back": "spring",
         "name": "Motyl",
@@ -6,6 +6,7 @@
         "duration": "30 min",
         "age": "od 2 let",
         "profileImage": "motyl-small.jpg",
+        "sablona": "motyl-sablona-2.png",
         "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony."
         },
         {
@@ -14,6 +15,7 @@
         "duration": "30 min",
         "age": "od 2 let",
         "profileImage": "motyl-small.jpg",
+        "sablona": "",
         "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony."
         }  
     ],

@@ -1,0 +1,12 @@
+@use '../base/colors';
+@use '../abstracts/mixins';
+@use '../base/typography';
+@use '../base/basic';
+
+
+.download {
+    @include mixins.link;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid colors.$color-logo;
+}
