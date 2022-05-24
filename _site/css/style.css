@@ -34,7 +34,7 @@ h1 {
 }
 
 .footer {
-  color: rgb(50, 50, 50);
+  color: rgb(70, 70, 70);
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -77,13 +77,13 @@ h1 {
 
 .menu-mobile__item {
   text-decoration: none;
-  color: rgb(50, 50, 50);
+  color: rgb(70, 70, 70);
   list-style: none;
 }
 
 .menu-mobile__item a {
   text-decoration: none;
-  color: rgb(50, 50, 50);
+  color: rgb(70, 70, 70);
   display: flex;
   align-items: center;
 }
@@ -314,7 +314,7 @@ h1 {
   font-size: 20px;
   font-weight: 200;
   font-family: "Playball", cursive;
-  color: rgb(50, 50, 50);
+  color: rgb(70, 70, 70);
   text-align: center;
   margin: 0;
   padding: 20px 10px 0 10px;
@@ -331,6 +331,39 @@ h1 {
   }
 }
 
+.list {
+  display: flex;
+  flex-wrap: 1;
+  gap: 20px;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
 .list__item {
-  border: 2px solid green;
+  box-shadow: 1px 2px 4px rgb(123, 123, 123);
+  padding: 20px;
+  display: flex;
+  flex-wrap: 1;
+  gap: 20px;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.list__image {
+  border-radius: 4px;
+}
+.list__part th {
+  display: block;
+}
+.list__part td {
+  display: block;
+  font-size: 16px;
+}
+.list__name {
+  font-size: 20px;
+}
+.list a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
 }/*# sourceMappingURL=style.css.map */

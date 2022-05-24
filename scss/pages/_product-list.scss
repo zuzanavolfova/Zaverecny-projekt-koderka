@@ -1,5 +1,29 @@
+@use '../base/colors';
+@use '../abstracts/mixins';
+@use '../base/basic';
+
 .list {
+    @include mixins.flex;
+    padding-bottom: 20px;
     &__item {
-    border: 2px solid green;
+        box-shadow: 1px 2px 4px colors.$color-logo;
+        padding: 20px;
+        @include mixins.flex;
     }
-}
+    &__image {
+        border-radius: basic.$border-radius;
+    }
+     &__part th {
+        display: block; 
+    }
+    &__part td {
+        display: block;
+        font-size: 16px;
+    }
+    &__name {
+        font-size: 20px;
+    }
+    a {
+        @include mixins.link;
+    }
+} 

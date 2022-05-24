@@ -2,6 +2,8 @@
 @use 'typography';
 @use '../abstracts/mixins';
 
+$border-radius: 4px; 
+
 html {
     box-sizing: border-box;
 }

@@ -1,58 +1,66 @@
 { "spring": [
         {
         "name": "Motyl",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         },
         {
         "name": "Pokus",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         }  
     ],
 
     "summer": [
         {
         "name": "Motyl",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         },
         {
         "name": "Pokus",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         }  
     ],
     "autumn": [
         {
         "name": "Motyl",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         },
         {
         "name": "Pokus",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         }  
     ],
     "winter": [
         {
         "name": "Motyl",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         },
         {
         "name": "Opravva",
-        "technique": "Tempera",
+        "technique": "tempera",
         "duration": "30 min",
-        "age": "od 2 let"
+        "age": "od 2 let",
+        "profileImage": "motyl-small.jpg"
         }  
     ]
 }

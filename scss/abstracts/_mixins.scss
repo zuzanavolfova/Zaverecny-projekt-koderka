@@ -1,3 +1,5 @@
+@use '../base/colors';
+
 @mixin tablet {
     @media screen and (min-width: 650px) {
         @content;
@@ -8,4 +10,18 @@
     @media screen and (min-width: 900px) {
         @content;
     }
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: 1;
+    gap: 20px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: colors.$color-text;
 }
