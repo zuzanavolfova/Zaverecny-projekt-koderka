@@ -2,6 +2,7 @@
 @use '../base/colors';
 @use '../base/typography';
 
+
 //layout header
 .menu-desktop {
     display: none;
@@ -16,7 +17,7 @@
     grid-template-areas:
         "menu logo search";
 
-    @include tablet{
+    @include mixins.tablet{
          justify-items: start;
          grid-template-columns: 1fr 80px 80px ;
          grid-template-rows: 60px 40px;
@@ -38,7 +39,7 @@
         }
     }
 
-    @include desktop{
+    @include mixins.desktop{
         grid-template-columns: 700px 1fr 80px 80px ;
         grid-template-rows:60px 40px ;
         grid-template-areas:
@@ -52,18 +53,18 @@
             text-decoration: none;
             font-size: 18px;
         }
-        @include tablet{
+        @include mixins.tablet{
             display:grid;
             grid-area: about;
         }
-        @include desktop{
+        @include mixins.desktop{
             align-self: end;
             font-size: 20px;
         }
     }
     &__space {
         display: none;
-        @include desktop{
+        @include mixins.desktop{
             display: flex;
             grid-area: whitespace;        }
     }
@@ -74,12 +75,12 @@
         font-weight: 200;
         font-family: typography.$font-secondary;
         color: colors.$color-logo;
-        @include tablet{
+        @include mixins.tablet{
             padding: 40px 0 20px 20px;
             margin-bottom: 20px;
             font-size: 32px;
         }
-        @include desktop{
+        @include mixins.desktop{
             justify-self: center;
             font-size: 42px;
             padding: 40px 0;

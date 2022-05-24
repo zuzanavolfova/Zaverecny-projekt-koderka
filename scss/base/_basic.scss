@@ -23,8 +23,8 @@ body {
     padding: 0;
     margin: 0 auto;
     font-family: typography.$font-primary;
-    @include desktop{
-    padding-top: 40px;
+    @include mixins.desktop {
+        padding-top: 40px;
     }
 }
 

@@ -55,13 +55,16 @@
     align-items: center;
     flex-wrap: wrap;
     gap:10px;
-}    
+}
 .menu-desktop__item  {
     text-align: center;
     list-style: none;
     padding-top: 20px;
-       
-    }
+}
+.menu-desktop__item--active{
+    font-weight: bold;
+}
+
 .menu-desktop__item a {
         width: 100%;
         color: colors.$color-primary;
@@ -71,10 +74,10 @@
         background-color: white;
         padding: 10px 16px;
         border-radius: 4px;
-        @include desktop{
-            font-size: 20px;
-        }
-        
+    @include mixins.desktop {
+        font-size: 20px;
+    }
+
     &:hover {
         border: 1px solid colors.$color-border-light;
     }    

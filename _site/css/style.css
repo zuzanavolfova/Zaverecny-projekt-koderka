@@ -110,6 +110,10 @@ h1 {
   padding-top: 20px;
 }
 
+.menu-desktop__item--active {
+  font-weight: bold;
+}
+
 .menu-desktop__item a {
   width: 100%;
   color: #0097A7;
