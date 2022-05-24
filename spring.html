@@ -3,10 +3,10 @@ layout: layouts/main-template.njk
 title: Jaro
 ---
 
-<!-- Zpet -->
-<h1>Jarní tvoření</h1>
+<a class="back" href="/"> ← zpět</a>
+<h1 class="title-list">Jarní tvoření</h1>
 
-<cestion class="list">
+<section class="list">
 {% for itemSpring in list.spring %}
 
     <a class="list__item" href="#">
@@ -30,5 +30,4 @@ title: Jaro
         </table>
     </a>
 {% endfor %}    
-</section>
-   
+</section>  
