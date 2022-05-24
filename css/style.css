@@ -33,6 +33,14 @@ h1 {
   color: #0097A7;
 }
 
+.back {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  color: #0097A7;
+  display: flex;
+  margin: 20px;
+}
+
 .footer {
   color: rgb(70, 70, 70);
   font-size: 12px;
@@ -331,6 +339,10 @@ h1 {
   }
 }
 
+.title-list {
+  padding-left: 20px;
+}
+
 .list {
   display: flex;
   flex-wrap: 1;
@@ -338,7 +350,7 @@ h1 {
   text-align: left;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 .list__item {
   box-shadow: 1px 2px 4px rgb(123, 123, 123);

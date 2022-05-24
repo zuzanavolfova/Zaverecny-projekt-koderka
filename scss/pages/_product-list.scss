@@ -2,9 +2,12 @@
 @use '../abstracts/mixins';
 @use '../base/basic';
 
+.title-list {
+    padding-left: 20px
+}
 .list {
     @include mixins.flex;
-    padding-bottom: 20px;
+    padding: 20px;
     &__item {
         box-shadow: 1px 2px 4px colors.$color-logo;
         padding: 20px;

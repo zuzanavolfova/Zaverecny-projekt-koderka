@@ -34,5 +34,12 @@ h1 {
     color: colors.$color-primary;
 }
 
+.back {
+    @include mixins.link;
+    color: colors.$color-primary;
+    display: flex;
+    margin: 20px;
+}
+
 
 
