@@ -5,3 +5,30 @@ title: Jaro
 
 <!-- Zpet -->
 <h1>Jarní tvoření</h1>
+
+<div class="list">
+{% for itemSpring in spring %}
+
+    <a class="list__item" href="#">
+        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr>
+                <th class="list__name">{{itemSpring.name}}</th>
+            </tr>
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemSpring.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemSpring.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemSpring.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %}    
+</div>
+   
