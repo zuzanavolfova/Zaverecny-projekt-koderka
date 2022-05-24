@@ -9,7 +9,7 @@ title: Jaro
 <section class="list">
 {% for itemSpring in list.spring %}
 
-    <a class="list__item" href="#">
+    <a class="list__item" href="/jaro/{{itemSpring.name | slug }}/">
         <img class="list__image" src="/images/small/{{itemSpring.profileImage}}" alt="{{listItem.name}}">
         <table class="list__description">
             <tr class="list__part">

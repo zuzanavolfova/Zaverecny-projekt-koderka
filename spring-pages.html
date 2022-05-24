@@ -1,34 +1,34 @@
 ---
 layout: layouts/main-template.njk
 pagination:
-  data: list
+  data: list.spring
   size: 1
-  alias: instruction
-permalink: "jaro/{{ instruction.spring.name | slug }}/"
+  alias: itemSpring
+permalink: "jaro/{{ itemSpring.name | slug }}/"
 ---
-<a class="back" href="/"> ← zpět</a>
-<h1 class="title-list">{{instruction.spring.name}}</h1>
+<a class="back" href="/spring/"> ← zpět</a>
+<h1 class="title-list">{{itemSpring.name}}</h1>
 
 <div class="instruction">
     <section class="instruction__description">
-        <img class="instruction__image-main" src="/images/small/{{instruction.spring.profileImage}}" alt="instruction.spring.name">
+        <img class="instruction__image-main" src="/images/small/{{itemSpring.profileImage}}" alt="itemSpring.name">
         <table class="instruction__basic-info">
-                        <tr>
+            <tr>
                 <th class="list__bold">Technika</th>
-                <td>{{instruction.spring.technique}}</td>
+                <td>{{itemSpring.technique}}</td>
             </tr>
             <tr>
                 <th class="list__bold">Potřebný čas</th>
-                <td>{{instruction.spring.duration}}</td>
+                <td>{{itemSpring.duration}}</td>
             </tr>
             <tr>
                 <th class="list__bold">Věk</th>
-                <td>{{instruction.spring.age}}</td>
+                <td>{{itemSpring.age}}</td>
             </tr>
         </table>
     </section> 
     <section class="instruction__text">
-        <p>{{instruction.spring.text}}</p>
+        <p>{{itemSpring.text}}</p>
     </section>
     <section class="instruction__images">
 
