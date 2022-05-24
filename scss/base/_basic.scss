@@ -36,7 +36,7 @@ h1 {
 
 .back {
     @include mixins.link;
-    color: colors.$color-primary;
+    color: colors.$color-text;
     display: flex;
     margin: 20px;
 }
