@@ -360,20 +360,20 @@ h1 {
   width: 100%;
 }
 .list__part th {
-  display: block;
   text-align: left;
   font-weight: 500;
 }
 .list__part td {
-  display: block;
   font-size: 14px;
   text-align: left;
   font-weight: 300;
+  padding-left: 20px;
 }
 .list__name {
   font-size: 20px;
   font-weight: 300;
-  margin: 10px 0;
+  padding: 10px 0;
+  grid-area: name;
 }
 .list__link {
   text-decoration: none;

@@ -20,22 +20,27 @@
         border-radius: basic.$border-radius;
         width: 100%;
     }
+ 
     &__part th {
-        display: block; 
+        // display: block; 
         text-align: left;
         font-weight: 500;
+
     }
     &__part td {
-        display: block;
+        // display: block;
         font-size: 14px;
         text-align: left;
         font-weight: 300;
+        padding-left: 20px;
     }
     &__name {
         font-size: 20px;
         font-weight: 300;
-        margin:10px 0;
+        padding:10px 0;
+        grid-area: name;
     }
+  
     &__link {
         @include mixins.link;
     }
