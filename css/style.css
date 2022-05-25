@@ -323,8 +323,7 @@ h1 {
 
 .description {
   font-size: 20px;
-  font-weight: 200;
-  font-family: "Playball", cursive;
+  font-weight: 300;
   color: rgb(60, 60, 60);
   text-align: center;
   margin: 0;
@@ -332,13 +331,13 @@ h1 {
 }
 @media screen and (min-width: 650px) {
   .description {
-    font-size: 26px;
+    font-size: 24px;
     padding-top: 40px;
   }
 }
 @media screen and (min-width: 900px) {
   .description {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 

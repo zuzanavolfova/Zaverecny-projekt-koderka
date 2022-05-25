@@ -71,18 +71,17 @@
 
 .description {
     font-size: 20px;
-    font-weight: 200;
-    font-family:  typography.$font-secondary;
+    font-weight: 300;
     color: colors.$color-text;
     text-align: center;
     margin: 0;
     padding: 20px 10px 0 10px;
    
     @include mixins.tablet{
-        font-size: 26px;
+        font-size: 24px;
         padding-top: 40px;
     }
     @include mixins.desktop{
-        font-size: 36px;
+        font-size: 28px;
     }
 }
