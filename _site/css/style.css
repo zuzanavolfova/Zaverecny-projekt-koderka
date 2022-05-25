@@ -18,6 +18,7 @@ body {
 }
 
 .kontejner {
+  color: rgb(60, 60, 60);
   max-width: 1200px;
   padding: 0;
   margin: 0 auto;
@@ -35,14 +36,14 @@ h1 {
 
 .back {
   text-decoration: none;
-  color: rgb(70, 70, 70);
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
+  color: rgb(60, 60, 60);
   display: flex;
   margin: 20px;
 }
 
 .footer {
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -85,13 +86,13 @@ h1 {
 
 .menu-mobile__item {
   text-decoration: none;
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
   list-style: none;
 }
 
 .menu-mobile__item a {
   text-decoration: none;
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
   display: flex;
   align-items: center;
 }
@@ -160,7 +161,7 @@ h1 {
 @media screen and (min-width: 650px) {
   .header {
     justify-items: start;
-    grid-template-columns: 1fr 80px 80px;
+    grid-template-columns: 1fr 120px 80px;
     grid-template-rows: 60px 40px;
     grid-template-areas: "logo about search" "menu menu menu";
   }
@@ -177,7 +178,7 @@ h1 {
 }
 @media screen and (min-width: 900px) {
   .header {
-    grid-template-columns: 700px 1fr 80px 80px;
+    grid-template-columns: 700px 1fr 120px 80px;
     grid-template-rows: 60px 40px;
     grid-template-areas: "logo logo       logo  logo  " "menu whitespace about search";
   }
@@ -213,7 +214,7 @@ h1 {
 }
 .header__logo {
   text-decoration: none;
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
   padding: 10px 20px;
   grid-area: logo;
   font-size: 26px;
@@ -324,7 +325,7 @@ h1 {
   font-size: 20px;
   font-weight: 200;
   font-family: "Playball", cursive;
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
   text-align: center;
   margin: 0;
   padding: 20px 10px 0 10px;
@@ -381,12 +382,12 @@ h1 {
 }
 .list a {
   text-decoration: none;
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
 }
 
 .download {
   text-decoration: none;
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
   padding: 10px 20px;
   border-radius: 6px;
   border: 1px solid rgb(123, 123, 123);
@@ -396,5 +397,33 @@ h1 {
   padding: 20px 20px 20px 36px;
 }
 .search__title {
-  color: rgb(70, 70, 70);
+  color: rgb(60, 60, 60);
+}
+
+.project {
+  color: rgb(60, 60, 60);
+  padding: 20px;
+}
+.project__title {
+  color: rgb(60, 60, 60);
+  font-weight: 400;
+}
+.project__omne {
+  display: flex;
+}
+@media screen and (min-width: 900px) {
+  .project__omne {
+    max-width: 940px;
+  }
+}
+.project__foto {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .project__foto {
+    display: flex;
+    max-width: 300px;
+    border-radius: 4px 180px 4px 4px;
+    padding: 20px 20px 20px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -19,7 +19,7 @@
 
     @include mixins.tablet{
          justify-items: start;
-         grid-template-columns: 1fr 80px 80px ;
+         grid-template-columns: 1fr 120px 80px ;
          grid-template-rows: 60px 40px;
          grid-template-areas:
             "logo about search"
@@ -40,7 +40,7 @@
     }
 
     @include mixins.desktop{
-        grid-template-columns: 700px 1fr 80px 80px ;
+        grid-template-columns: 700px 1fr 120px 80px ;
         grid-template-rows:60px 40px ;
         grid-template-areas:
             "logo logo       logo  logo  "
