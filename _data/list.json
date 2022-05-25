@@ -1,5 +1,6 @@
 {   "spring": [
         {
+        // template
         "category": "jaro",
         "name": "Motyl",
         "technique": "tempera",
