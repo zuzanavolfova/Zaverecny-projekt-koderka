@@ -390,4 +390,11 @@ h1 {
   padding: 10px 20px;
   border-radius: 6px;
   border: 1px solid rgb(123, 123, 123);
+}
+
+.search {
+  padding: 20px 20px 20px 36px;
+}
+.search__title {
+  color: rgb(70, 70, 70);
 }/*# sourceMappingURL=style.css.map */

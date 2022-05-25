@@ -2,3 +2,12 @@
 @use '../base/colors';
 @use '../base/typography';
 @use '../abstracts/mixins';
+
+
+.search {
+    padding: 20px 20px 20px 36px;
+    &__title {
+        color: colors.$color-text;
+    }
+
+}

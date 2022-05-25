@@ -2,5 +2,112 @@
 layout: layouts/main-template.njk
 title: Vyhledávání
 ---
+<section class="search">
+    <h2 class="search__title"> Najdi si tvoření podle svých parametrů</h2>
 
-<h1 class="search__title"> Najdi si tvoření podle svých parametrů</h1>
+    <p class="search__text"> Zdravím všechny kreativce. <br>
+    Tato stránka se připravuje. Pokud se Vám nelíbí vyhledávat podle ročního období, zkuste projít všechny návody. Třeba kombinací dvou návodů vymyslíte báječný nový projekt.</p>
+</section>
+<section>
+<div class="list">
+{% for itemSpring in list.spring %}
+
+    <a class="list__item" href="/jaro/{{itemSpring.name | slug }}/">
+        <img class="list__image" src="/images/small/{{itemSpring.profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr class="list__part">
+                <th class="list__name">{{itemSpring.name}}</th>
+            </tr>
+            <tr class="list__part">
+                <th class="list__bold">Technika:</th>
+                <td>{{itemSpring.technique}}</td>
+            </tr>
+            <tr class="list__part">
+                <th class="list__bold">Potřebný čas:</th>
+                <td>{{itemSpring.duration}}</td>
+            </tr>
+            <tr class="list__part">
+                <th class="list__bold">Věk:</th>
+                <td>{{itemSpring.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %} 
+</div>
+<div class="list">
+{% for itemSummer in list.summer %}
+
+    <a class="list__item" href="/leto/{{itemSummer.name | slug }}/">
+        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr>
+                <th class="list__name">{{itemSummer.name}}</th>
+            </tr>
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemSummer.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemSummer.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemSummer.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %}
+</div>
+<div class="list">
+{% for itemAutumn in list.autumn %}
+
+    <a class="list__item" href="/podzim/{{itemAutumn.name | slug }}/">
+        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr>
+                <th class="list__name">{{itemAutumn.name}}</th>
+            </tr>
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemAutumn.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemAutumn.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemAutumn.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %}
+
+</div><div class="list">
+{% for itemWinter in list.winter %}
+
+    <a class="list__item" href="/zima/{{itemWinter.name | slug }}/">
+        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
+        <table class="list__description">
+            <tr>
+                <th class="list__name">{{itemWinter.name}}</th>
+            </tr>
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemWinter.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemWinter.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemWinter.age}}</td>
+            </tr>
+        </table>
+    </a>
+{% endfor %}
+</div>
+
+</section>
