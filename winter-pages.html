@@ -1,0 +1,39 @@
+---
+layout: layouts/main-template.njk
+pagination:
+  data: list.winter
+  size: 1
+  alias: itemWinter
+permalink: "zima/{{ itemWinter.name | slug }}/"
+---
+<a class="back" href="/zima/"> ← zpět</a>
+<h1 class="title-list">{{itemWinter.name}}</h1>
+
+<div class="instruction">
+    <section class="instruction__description">
+        <img class="instruction__image-main" src="/images/small/{{itemWinter.profileImage}}" alt="iitemWinter.name">
+        <table class="instruction__basic-info">
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemWinter.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemWinter.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemWinter.age}}</td>
+            </tr>
+            <tr>
+                <a class="download" href="/images/templates/{{itemWinter.sablona}}" download="sablona-motyl"> Stáhnout šablonu</a> 
+            </tr>
+        </table>
+    </section> 
+    <section class="instruction__text">
+        <p>{{itemWinter.text}}</p>
+    </section>
+    <section class="instruction__images">
+
+    </section>
+</div>

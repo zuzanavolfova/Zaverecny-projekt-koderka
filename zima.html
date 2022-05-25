@@ -9,7 +9,7 @@ title: Zima
 <section class="list">
 {% for itemWinter in list.winter %}
 
-    <a class="list__item" href="#">
+    <a class="list__item" href="/zima/{{itemWinter.name | slug }}/">
         <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
         <table class="list__description">
             <tr>

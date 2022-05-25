@@ -1,0 +1,39 @@
+---
+layout: layouts/main-template.njk
+pagination:
+  data: list.autumn
+  size: 1
+  alias: itemAutumn
+permalink: "podzim/{{ itemAutumn.name | slug }}/"
+---
+<a class="back" href="/podzim/"> ← zpět</a>
+<h1 class="title-list">{{itemAutumn.name}}</h1>
+
+<div class="instruction">
+    <section class="instruction__description">
+        <img class="instruction__image-main" src="/images/small/{{itemAutumn.profileImage}}" alt="itemAutumn.name">
+        <table class="instruction__basic-info">
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>{{itemAutumn.technique}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>{{itemAutumn.duration}}</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>{{itemAutumn.age}}</td>
+            </tr>
+            <tr>
+                <a class="download" href="/images/templates/{{itemAutumn.sablona}}" download="sablona-motyl"> Stáhnout šablonu</a> 
+            </tr>
+        </table>
+    </section> 
+    <section class="instruction__text">
+        <p>{{itemAutumn.text}}</p>
+    </section>
+    <section class="instruction__images">
+
+    </section>
+</div>

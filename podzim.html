@@ -9,7 +9,7 @@ title: Podzim
 <section class="list">
 {% for itemAutumn in list.autumn %}
 
-    <a class="list__item" href="#">
+    <a class="list__item" href="/podzim/{{itemAutumn.name | slug }}/">
         <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
         <table class="list__description">
             <tr>
