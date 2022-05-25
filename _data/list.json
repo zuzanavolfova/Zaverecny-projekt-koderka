@@ -1,14 +1,14 @@
 {   "spring": [
         {
-        "back": "spring",
+        "category": "jaro",
         "name": "Motyl",
         "technique": "tempera",
         "duration": "30 min",
         "age": "od 2 let",
         "profileImage": "motyl-small.jpg",
         "sablona": "motyl-sablona-2.png",
-        "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony."
-        },
+        "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony.",
+        "images": []},
         {
         "name": "Pokus",
         "technique": "tempera",
