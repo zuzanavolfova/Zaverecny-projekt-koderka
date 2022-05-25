@@ -1,37 +1,37 @@
 ---
 layout: layouts/main-template.njk
 pagination:
-  data: list.spring
+  data: list.summer
   size: 1
-  alias: itemSpring
-permalink: "jaro/{{ itemSpring.name | slug }}/"
+  alias: itemSummer
+permalink: "leto/{{ itemSummer.name | slug }}/"
 ---
-<a class="back" href="/spring/"> ← zpět</a>
-<h1 class="title-list">{{itemSpring.name}}</h1>
+<a class="back" href="/leto/"> ← zpět</a>
+<h1 class="title-list">{{itemSummer.name}}</h1>
 
 <div class="instruction">
     <section class="instruction__description">
-        <img class="instruction__image-main" src="/images/small/{{itemSpring.profileImage}}" alt="itemSpring.name">
+        <img class="instruction__image-main" src="/images/small/{{itemSummer.profileImage}}" alt="itemSummer.name">
         <table class="instruction__basic-info">
             <tr>
                 <th class="list__bold">Technika</th>
-                <td>{{itemSpring.technique}}</td>
+                <td>{{itemSummer.technique}}</td>
             </tr>
             <tr>
                 <th class="list__bold">Potřebný čas</th>
-                <td>{{itemSpring.duration}}</td>
+                <td>{{itemSummer.duration}}</td>
             </tr>
             <tr>
                 <th class="list__bold">Věk</th>
-                <td>{{itemSpring.age}}</td>
+                <td>{{itemSummer.age}}</td>
             </tr>
             <tr>
-                <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-motyl"> Stáhnout šablonu</a> 
+                <a class="download" href="/images/templates/{{itemSummer.sablona}}" download="sablona-motyl"> Stáhnout šablonu</a> 
             </tr>
         </table>
     </section> 
     <section class="instruction__text">
-        <p>{{itemSpring.text}}</p>
+        <p>{{iitemSummer.text}}</p>
     </section>
     <section class="instruction__images">
 
