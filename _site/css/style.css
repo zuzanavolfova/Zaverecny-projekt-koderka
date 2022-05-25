@@ -355,16 +355,6 @@ h1 {
   padding: 20px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 650px) {
-  .list__item {
-    display: flex;
-    flex-wrap: 1;
-    gap: 20px;
-    text-align: left;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
 .list__image {
   border-radius: 4px;
   width: 100%;

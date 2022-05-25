@@ -14,9 +14,7 @@
         box-shadow: 1px 2px 4px colors.$color-logo;
         padding: 20px;
         margin-bottom: 20px;
-        @include mixins.tablet {
-            @include mixins.flex;
-        }
+       
     }
     &__image {
         border-radius: basic.$border-radius;
