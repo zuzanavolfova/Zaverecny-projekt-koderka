@@ -21,15 +21,16 @@
     &__description{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image table";
     }
 
     &__image {
         border-radius: basic.$border-radius;
         width: 100%;
-        grid-column: 1;
+        grid-area: image;
     }
     &__description {
-        grid-column: 2;
+        grid-area: table;
     }
     &__table {
         padding-left: 20px;
@@ -54,8 +55,6 @@
     &__name {
         font-size: 20px;
         font-weight: 300;
-        padding:10px 0;
-        grid-area: name;
     }
   
     &__link {

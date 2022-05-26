@@ -363,14 +363,15 @@ h1 {
 .list__description {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image table";
 }
 .list__image {
   border-radius: 4px;
   width: 100%;
-  grid-column: 1;
+  grid-area: image;
 }
 .list__description {
-  grid-column: 2;
+  grid-area: table;
 }
 .list__table {
   padding-left: 20px;
@@ -399,8 +400,6 @@ h1 {
 .list__name {
   font-size: 20px;
   font-weight: 300;
-  padding: 10px 0;
-  grid-area: name;
 }
 .list__link {
   text-decoration: none;
