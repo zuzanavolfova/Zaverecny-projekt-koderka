@@ -349,15 +349,23 @@ h1 {
 
 .list {
   padding: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 650px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 .list__item {
   box-shadow: 1px 2px 4px rgb(123, 123, 123);
-  padding: 20px;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
 @media screen and (min-width: 650px) {
   .list__item {
-    max-width: 200px;
+    flex-basis: calc(50% - 20px);
   }
 }
 .list__description {
@@ -368,34 +376,22 @@ h1 {
 .list__image {
   border-radius: 4px;
   width: 100%;
+  padding: 20px 10px 20px 20px;
   grid-area: image;
 }
-.list__description {
-  grid-area: table;
-}
 .list__table {
-  padding-left: 20px;
+  padding: 20px 20px 20px 0;
+  grid-area: table;
 }
 .list__part th {
   text-align: left;
   font-weight: 500;
-}
-@media screen and (min-width: 650px) {
-  .list__part th {
-    display: block;
-  }
 }
 .list__part td {
   font-size: 14px;
   text-align: left;
   font-weight: 300;
   padding-left: 5px;
-}
-@media screen and (min-width: 650px) {
-  .list__part td {
-    display: block;
-    padding: 0;
-  }
 }
 .list__name {
   font-size: 20px;

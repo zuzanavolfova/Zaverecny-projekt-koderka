@@ -10,47 +10,44 @@
 }
 .list {
     padding: 20px;
+    margin: 0 auto;
+    @include mixins.tablet {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+    }
     &__item {
         box-shadow: 1px 2px 4px colors.$color-logo;
-        padding: 20px;
         margin-bottom: 20px;
+        border-radius: basic.$border-radius;
         @include mixins.tablet {
-            max-width: 200px;
-        }
+            flex-basis: calc(50% - 20px);}
     }
     &__description{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "image table";
     }
-
     &__image {
         border-radius: basic.$border-radius;
         width: 100%;
+        padding: 20px 10px 20px 20px;
         grid-area: image;
     }
-    &__description {
-        grid-area: table;
-    }
     &__table {
-        padding-left: 20px;
+        padding: 20px 20px 20px 0;
+        grid-area: table;
+
     }
     &__part th {
         text-align: left;
         font-weight: 500;
-        @include mixins.tablet {
-            display: block; 
-        }
     }
     &__part td {
         font-size: 14px;
         text-align: left;
         font-weight: 300;
         padding-left: 5px;
-        @include mixins.tablet {
-            display: block;
-            padding: 0;
-        }
     }
     &__name {
         font-size: 20px;
@@ -58,7 +55,6 @@
     }
   
     &__link {
-
         @include mixins.link;
     }
 } 
