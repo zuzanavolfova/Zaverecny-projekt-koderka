@@ -41,6 +41,7 @@
     &__text {
         text-decoration: none;
         color: white;
+        font-weight: 300;
         padding: 5px 10px;
         font-size: 18px;
         background-color: colors.$color-primary;
@@ -78,7 +79,7 @@
 
 .description {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
     color: colors.$color-text;
     text-align: center;
     margin: 0;
