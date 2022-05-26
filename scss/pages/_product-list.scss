@@ -28,6 +28,7 @@
         }
     }
     &__description{
+        padding: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "image table";
@@ -38,18 +39,15 @@
     &__image {
         border-radius: basic.$border-radius;
         width: 100%;
-        padding: 20px 10px 20px 20px;
         grid-area: image;
-        @include mixins.desktop {
-            padding: 20px;
-        }
+        
     }
     &__table {
-        padding: 20px 20px 20px 0;
+        padding-left:10px;
         grid-area: table;
         @include mixins.desktop {
-            padding: 0 20px 20px 20px;
-         }
+        padding:0;
+        }
 
     }
     &__part th {

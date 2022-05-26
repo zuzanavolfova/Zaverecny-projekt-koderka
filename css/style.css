@@ -374,6 +374,7 @@ h1 {
   }
 }
 .list__description {
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "image table";
@@ -386,21 +387,15 @@ h1 {
 .list__image {
   border-radius: 4px;
   width: 100%;
-  padding: 20px 10px 20px 20px;
   grid-area: image;
 }
-@media screen and (min-width: 900px) {
-  .list__image {
-    padding: 20px;
-  }
-}
 .list__table {
-  padding: 20px 20px 20px 0;
+  padding-left: 10px;
   grid-area: table;
 }
 @media screen and (min-width: 900px) {
   .list__table {
-    padding: 0 20px 20px 20px;
+    padding: 0;
   }
 }
 .list__part th {
@@ -420,6 +415,19 @@ h1 {
 .list__link {
   text-decoration: none;
   color: rgb(60, 60, 60);
+}
+
+.instruction {
+  padding: 20px;
+  margin: 0 auto;
+}
+.instruction__description {
+  display: flex;
+}
+.instruction__image-main {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .download {

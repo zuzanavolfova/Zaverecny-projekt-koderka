@@ -3,7 +3,17 @@
 @use '../base/typography';
 @use '../base/basic';
 
-
+.instruction {
+    padding: 20px;
+    margin: 0 auto;
+    &__description {
+        display:flex;
+    }
+    &__image-main{
+        width: 100%;
+        object-fit:contain
+    }
+}
 .download {
     @include mixins.link;
     padding: 10px 20px;
