@@ -10,11 +10,17 @@
 }
 .list {
     padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
     &__item {
         box-shadow: 1px 2px 4px colors.$color-logo;
         padding: 20px;
         margin-bottom: 20px;
-       
+        flex-basis: 200px;
+
+        @include mixins.tablet {
+            max-width: 200px;
+        }
     }
     &__image {
         border-radius: basic.$border-radius;
@@ -22,17 +28,21 @@
     }
  
     &__part th {
-        display: block; 
         text-align: left;
         font-weight: 500;
-
+        @include mixins.tablet {
+            display: block; 
+        }
     }
     &__part td {
-        display: block;
         font-size: 14px;
         text-align: left;
         font-weight: 300;
-        // padding-left: 20px;
+        padding-left: 20px;
+        @include mixins.tablet {
+            display: block;
+            padding: 0;
+        }
     }
     &__name {
         font-size: 20px;
