@@ -278,12 +278,14 @@ h1 {
     flex-basis: 20%;
     margin: 0 10px;
     border-radius: 4px;
+    height: 160px;
   }
 }
 @media screen and (min-width: 900px) {
   .navigation__item {
     flex-basis: 40%;
     margin: 20px;
+    height: 200px;
   }
 }
 .navigation__item:hover .navigation__text {
@@ -299,10 +301,16 @@ h1 {
   background-color: #0097A7;
   border-radius: 4px 0 0 4px;
   position: relative;
-  top: 70px;
+  top: 76px;
+}
+@media screen and (min-width: 650px) {
+  .navigation__text {
+    top: 88px;
+  }
 }
 @media screen and (min-width: 900px) {
   .navigation__text {
+    top: 116px;
     font-size: 20px;
   }
 }

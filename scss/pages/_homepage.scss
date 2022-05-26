@@ -26,16 +26,18 @@
            flex-basis: 20%;
            margin: 0 10px;
            border-radius: 4px;
+            height: 160px ;
         }
         @include mixins.desktop{
             flex-basis: 40%;
-            // padding: 100px 0 60px 0;
             margin: 20px;
+            height: 200px ;
 
         }
         &:hover .navigation__text{
             padding: 8px 40px 8px 10px;
             font-weight: 400;
+           
         }
     }
 
@@ -48,8 +50,12 @@
         background-color: colors.$color-primary;
         border-radius: 4px 0 0 4px ;
         position: relative;
-        top: 70px;
+        top: 76px;
+        @include mixins.tablet{
+            top: 88px;
+        }
         @include mixins.desktop{
+            top: 116px;
             font-size: 20px;
         }
         
