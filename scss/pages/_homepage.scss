@@ -11,6 +11,8 @@
         padding: 20px 0;
     }
     &__item {
+        // box-shadow: 4px 4px 10px grey;
+
         flex-basis: 100%;
         flex-grow: 1;
         background-color: white;
@@ -30,6 +32,10 @@
             margin: 20px;
 
         }
+        &:hover{
+            // box-shadow: none;
+            
+        }
     }
 
     &__text {
@@ -42,6 +48,7 @@
         @include mixins.desktop{
             font-size: 20px;
         }
+        
     }  
     &__background1 {
         background-image: url(/images/background/navigation-spring-small.JPG);

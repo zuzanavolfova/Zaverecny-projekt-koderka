@@ -54,7 +54,7 @@
     justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap;
-    gap:10px;
+    gap:20px;
 }
 .menu-desktop__item  {
     text-align: center;
@@ -63,7 +63,7 @@
 }
 
 .menu-desktop__item--active .menu-desktop__link {
-    border: 1px solid colors.$color-border-light;
+    border-bottom: 2px solid colors.$color-border-light;
 }
 
 .menu-desktop__item a {
@@ -73,13 +73,13 @@
         font-size: 18px;
         text-decoration: none;
         background-color: white;
-        padding: 10px 16px;
-        border-radius: 4px;
+        padding: 5px 0px;
+        // border-radius: 4px;
     @include mixins.desktop {
         font-size: 20px;
     }
 
     &:hover {
-        border: 1px solid colors.$color-border-light;
+        border-bottom: 2px solid colors.$color-border-light;
     }    
 }

@@ -1,4 +1,4 @@
-{   "spring": [
+ [
         {
         "category": "spring",
         "name": "Motyl",
@@ -10,6 +10,7 @@
         "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony.",
         "images": []},
         {
+            "category": "spring",
         "name": "Pokus",
         "technique": "tempera",
         "duration": "30 min",
@@ -19,6 +20,7 @@
         "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony."
         },
         {
+            "category": "spring",
         "name": "Horse",
         "technique": "tempera",
         "duration": "30 min",
@@ -27,7 +29,7 @@
         "sablona": "",
         "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony."
         },
-        {
+        {"category": "winter",
         "name": "Mys",
         "technique": "tempera",
         "duration": "30 min",
@@ -36,9 +38,8 @@
         "sablona": "",
         "text": "Namalujte polovinu motýla tělem směrem k přehnuté části. Můžete využít přiložené šablony."
         }
-    ],
-    "summer": [
-        {
+    ,
+        {"category": "winter",
         "name": "Kocka",
         "technique": "tempera",
         "duration": "30 min",
@@ -52,8 +53,7 @@
         "age": "od 2 let",
         "profileImage": "motyl-small.jpg"
         }  
-    ],
-    "autumn": [
+  ,
         {
         "name": "Krava",
         "technique": "tempera",
@@ -68,9 +68,7 @@
         "age": "od 2 let",
         "profileImage": "motyl-small.jpg"
         }  
-    ],
-    "winter": [
-        {
+    ,{
         "name": "vosa",
         "technique": "tempera",
         "duration": "30 min",
@@ -83,6 +81,5 @@
         "duration": "30 min",
         "age": "od 2 let",
         "profileImage": "motyl-small.jpg"
-        }  
-    ]
-}
+        }
+     ]
