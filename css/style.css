@@ -146,8 +146,7 @@ h1 {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   display: grid;
   justify-items: center;
   align-items: center;
