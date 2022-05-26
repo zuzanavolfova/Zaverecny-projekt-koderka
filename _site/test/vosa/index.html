@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=Playball&family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet"> 
+  
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="css/glide.core.css">
+	<link rel="stylesheet" href="css/glide.theme.css">
+    
+    <title>  </title>
+
+<body>
+<div class="kontejner">
+    <header class="header">
+    <!-- menu mobile -->
+<nav class="menu-mobile">
+    <button class="menu-mobile__button" onclick="menu()">
+        Menu
+    </button>
+    <ul class="menu-mobile__list">
+        <li class="menu-mobile__item"><a href="/">                 <img class="menu-mobile__icon" src="/images/icons/home-icon.png" alt="ikona domu">Domů</a></li>
+        <li class="menu-mobile__item"><a href="/jaro/">   <img class="menu-mobile__icon" src="/images/icons/spring-icon.png" alt="ikona jaro">Jarní tvoření</a></li>
+        <li class="menu-mobile__item"><a href="/leto/">   <img class="menu-mobile__icon" src="/images/icons/summer-icon.png" alt="ikona léto">Letní tvoření</a></li>
+        <li class="menu-mobile__item"><a href="/podzim/"><img class="menu-mobile__icon" src="/images/icons/autumn-icon.png" alt="ikona podzim">Podzimní tvoření</a></li>
+        <li class="menu-mobile__item"><a href="/zima/">   <img class="menu-mobile__icon" src="/images/icons/winter-icon.png" alt="ikona zima">Zimní tvoření</a></li>
+        <li class="menu-mobile__item"><a href="/oprojektu/">            <img class="menu-mobile__icon" src="/images/icons/about-icon.png" alt="ikona o nas">O projektu</a></li>
+        <li class="menu-mobile__item"><a href="/vyhledavani/">     <img class="menu-mobile__icon" src="/images/icons/search-icon.png" alt="ikona vyhledavani">Vyhledávání</a></li>
+    </ul>
+</nav>
+<!-- menu desktop -->
+<nav class="menu-desktop">
+    <ul class="menu-desktop__list">
+        <li class="menu-desktop__item "><a class="menu-desktop__link" href="/jaro/">   Jarní tvoření</a></li>
+        <li class="menu-desktop__item "><a class="menu-desktop__link" href="/leto/">  Letní tvoření</a></li>
+        <li class="menu-desktop__item "><a class="menu-desktop__link" href="/podzim/"> Podzimní tvoření</a></li>
+        <li class="menu-desktop__item "><a class="menu-desktop__link" href="/zima/">  Zimní tvoření</a></li>
+    </ul>
+</nav>
+
+
+
+    
+
+
+    <!-- <img class="header__logo" src="/images/logo.png" alt="logo"> -->
+    <a class="header__logo" href="/">Tvoření pro motýlky</a>
+    <div class="header__space"></div>
+    <div class="header__about"> <a href="/oprojektu/">O projektu</a></div>
+    <a class="header__search" href="/vyhledavani/"> <img src="/images/icons/search-icon.png" alt="vyhledavani"> </a>
+</header>
+
+    <a class="back" href="/test/"> ← zpět</a>
+<h1 class="title-list">vosa</h1>
+
+<div class="instruction">
+    <section class="instruction__description">
+        <img class="instruction__image-main" src="/images/small/motyl-small.jpg" alt="itemSpring.name">
+        <table class="instruction__basic-info">
+            <tr>
+                <th class="list__bold">Technika</th>
+                <td>tempera</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Potřebný čas</th>
+                <td>30 min</td>
+            </tr>
+            <tr>
+                <th class="list__bold">Věk</th>
+                <td>od 2 let</td>
+            </tr>
+            <tr>
+                <td><a class="download" href="/images/templates/" download="sablona-motyl"> Stáhnout šablonu</a></td>
+            </tr>
+        </table>
+    </section> 
+    <section class="instruction__text">
+        <p></p>
+    </section>
+    <section class="instruction__images">
+
+    </section>
+</div>
+ 
+
+
+    <footer class="footer">
+    <div class="footer__contact">
+        <p class="footer__uppercase">Zuzana Volfová </p>
+        <p>+420 728 881 941<br>
+           zuzka.volfova@gmail.com
+        </p>
+    </div>
+    <div  class="footer__copyright">
+        Copyright © 2022
+    </div>
+</footer>
+
+
+</div>
+    <script src="/javaScript/menu.js"></script>
+    <script src="/javaScript/glide.min.js"></script>
+    
+    <script>
+      new Glide('.glide', {
+          autoplay: 4000,
+          perView: 1,
+          type: 'carousel',
+    
+      }).mount()
+    </script>
+</body>
