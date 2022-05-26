@@ -368,10 +368,20 @@ h1 {
     flex-basis: calc(50% - 20px);
   }
 }
+@media screen and (min-width: 900px) {
+  .list__item {
+    flex-basis: calc(25% - 20px);
+  }
+}
 .list__description {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "image table";
+}
+@media screen and (min-width: 900px) {
+  .list__description {
+    display: block;
+  }
 }
 .list__image {
   border-radius: 4px;
@@ -379,9 +389,19 @@ h1 {
   padding: 20px 10px 20px 20px;
   grid-area: image;
 }
+@media screen and (min-width: 900px) {
+  .list__image {
+    padding: 20px;
+  }
+}
 .list__table {
   padding: 20px 20px 20px 0;
   grid-area: table;
+}
+@media screen and (min-width: 900px) {
+  .list__table {
+    padding: 0 20px 20px 20px;
+  }
 }
 .list__part th {
   text-align: left;

@@ -21,22 +21,35 @@
         margin-bottom: 20px;
         border-radius: basic.$border-radius;
         @include mixins.tablet {
-            flex-basis: calc(50% - 20px);}
+            flex-basis: calc(50% - 20px);
+        }
+        @include mixins.desktop {
+            flex-basis: calc(25% - 20px);
+        }
     }
     &__description{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "image table";
+        @include mixins.desktop {
+           display: block;
+        }
     }
     &__image {
         border-radius: basic.$border-radius;
         width: 100%;
         padding: 20px 10px 20px 20px;
         grid-area: image;
+        @include mixins.desktop {
+            padding: 20px;
+        }
     }
     &__table {
         padding: 20px 20px 20px 0;
         grid-area: table;
+        @include mixins.desktop {
+            padding: 0 20px 20px 20px;
+         }
 
     }
     &__part th {
@@ -57,4 +70,4 @@
     &__link {
         @include mixins.link;
     }
-} 
+}
