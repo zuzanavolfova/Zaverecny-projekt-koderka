@@ -288,9 +288,14 @@ h1 {
     height: 200px;
   }
 }
+.navigation__item:hover {
+  opacity: 86%;
+}
 .navigation__item:hover .navigation__text {
-  padding: 8px 40px 8px 10px;
+  color: #0097A7;
+  background-color: white;
   font-weight: 400;
+  box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
 }
 .navigation__text {
   text-decoration: none;
@@ -299,7 +304,7 @@ h1 {
   padding: 5px 10px;
   font-size: 18px;
   background-color: #0097A7;
-  border-radius: 4px 0 0 4px;
+  border-radius: 40px 0 0 40px;
   position: relative;
   top: 76px;
 }

@@ -34,13 +34,18 @@
             height: 200px ;
 
         }
+       
+        &:hover {
+            opacity: 86%;
+        }
         &:hover .navigation__text{
-            padding: 8px 40px 8px 10px;
-            font-weight: 400;
-           
+          color: colors.$color-primary;
+          background-color: white;
+          font-weight: 400;
+          box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
+
         }
     }
-
     &__text {
         text-decoration: none;
         color: white;
@@ -48,7 +53,7 @@
         padding: 5px 10px;
         font-size: 18px;
         background-color: colors.$color-primary;
-        border-radius: 4px 0 0 4px ;
+        border-radius: 40px 0 0 40px ;
         position: relative;
         top: 76px;
         @include mixins.tablet{
