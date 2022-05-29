@@ -39,8 +39,8 @@
             opacity: 86%;
         }
         &:hover .navigation__text{
-          color: colors.$color-primary;
-          background-color: white;
+          color: white;
+          background-color: colors.$color-primary;
           font-weight: 400;
           box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
 
@@ -48,11 +48,11 @@
     }
     &__text {
         text-decoration: none;
-        color: white;
-        font-weight: 300;
+        color: colors.$color-primary;
+        font-weight: 400;
         padding: 5px 10px;
         font-size: 18px;
-        background-color: colors.$color-primary;
+        background-color: white;
         border-radius: 40px 0 0 40px ;
         position: relative;
         top: 76px;

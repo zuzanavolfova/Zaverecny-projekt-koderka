@@ -292,18 +292,18 @@ h1 {
   opacity: 86%;
 }
 .navigation__item:hover .navigation__text {
-  color: #0097A7;
-  background-color: white;
+  color: white;
+  background-color: #0097A7;
   font-weight: 400;
   box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
 }
 .navigation__text {
   text-decoration: none;
-  color: white;
-  font-weight: 300;
+  color: #0097A7;
+  font-weight: 400;
   padding: 5px 10px;
   font-size: 18px;
-  background-color: #0097A7;
+  background-color: white;
   border-radius: 40px 0 0 40px;
   position: relative;
   top: 76px;
