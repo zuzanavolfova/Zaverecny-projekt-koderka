@@ -458,23 +458,18 @@ h1 {
 }
 
 .instruction {
-  width: 100%;
   padding: 20px;
   margin: 0 auto;
   font-size: 14px;
-}
-.instruction__description {
-  display: flex;
 }
 .instruction__image-main {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.instruction__basic {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 10px;
+.instruction__basic-info {
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 .download {

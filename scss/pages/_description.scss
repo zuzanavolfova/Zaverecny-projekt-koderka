@@ -7,21 +7,18 @@
     margin:0;
 }
 .instruction {
-    width:100%;
+    // width:100%;
     padding: 20px;
     margin: 0 auto;
     font-size: 14px;
-    &__description {
-        display:flex;
-    }
+   
     &__image-main{
-        width: 100%;
+        width:100%;
         object-fit:contain
     }
-    &__basic{
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 10px;
+    &__basic-info{ 
+        text-align: left;
+        padding-bottom: 20px;
     }
 }
 .download {
