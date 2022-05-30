@@ -453,9 +453,14 @@ h1 {
   color: rgb(60, 60, 60);
 }
 
+.title-list {
+  margin: 0;
+}
+
 .instruction {
   padding: 20px;
   margin: 0 auto;
+  font-size: 14px;
 }
 .instruction__description {
   display: flex;
@@ -465,12 +470,18 @@ h1 {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.instruction__basic {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
 
 .download {
   text-decoration: none;
   color: rgb(60, 60, 60);
-  padding: 10px 20px;
-  border-radius: 6px;
+  font-size: 14px;
+  padding: 6px 6px;
+  border-radius: 12px;
   border: 1px solid rgb(123, 123, 123);
 }
 
