@@ -21,6 +21,7 @@
         "menu logo search";
 
     @include mixins.tablet{
+        position: static;
          justify-items: start;
          grid-template-columns: 1fr 120px 80px ;
          grid-template-rows: 60px 40px;

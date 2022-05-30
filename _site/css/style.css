@@ -164,6 +164,7 @@ h1 {
 }
 @media screen and (min-width: 650px) {
   .header {
+    position: static;
     justify-items: start;
     grid-template-columns: 1fr 120px 80px;
     grid-template-rows: 60px 40px;
