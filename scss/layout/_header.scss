@@ -74,7 +74,7 @@
     }
     &__logo {
         @include mixins.link;
-        padding: 10px 20px;
+        padding: 0px 20px;
         grid-area: logo;
         font-size: 26px;
         font-weight: 100;
@@ -82,14 +82,13 @@
         color: colors.$color-logo;
         
         @include mixins.tablet{
-            padding: 40px 0 20px 20px;
+            padding: 0;
             margin-bottom: 20px;
             font-size: 32px;
         }
         @include mixins.desktop{
             justify-self: center;
             font-size: 42px;
-            padding: 40px 0;
         }
     }
     &__search {
