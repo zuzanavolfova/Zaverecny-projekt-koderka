@@ -14,7 +14,8 @@
    
     &__image-main{
         width:100%;
-        object-fit:contain
+        object-fit:contain;
+        border-radius: basic.$border-radius;
     }
     &__basic-info{ 
         text-align: left;
