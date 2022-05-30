@@ -8,27 +8,30 @@ title: Zima
 
 <section class="list">
 {% for itemWinter in list.winter %}
-
-    <a class="list__item" href="/zima/{{itemWinter.name | slug }}/">
-        <img class="list__image" src="/images/small/{{profileImage}}" alt="{{listItem.name}}">
-        <table class="list__description">
-            <tr>
-                <th class="list__name">{{itemWinter.name}}</th>
-            </tr>
-            <tr>
-                <th class="list__bold">Technika</th>
-                <td>{{itemWinter.technique}}</td>
-            </tr>
-            <tr>
-                <th class="list__bold">Potřebný čas</th>
-                <td>{{itemWinter.duration}}</td>
-            </tr>
-            <tr>
-                <th class="list__bold">Věk</th>
-                <td>{{itemWinter.age}}</td>
-            </tr>
-        </table>
+<div class="list__item">
+    <a class="list__link" href="/jaro/{{itemWinter.name | slug }}/">
+        <div class="list__description"> 
+            <img class="list__image" src="/images/small/{{itemWinter.profileImage}}" alt="{{listItem.name}}">
+            <table class="list__table">
+                <tr class="list__part">
+                    <th class="list__name">{{itemWinter.name}}</th>
+                </tr>
+                <tr class="list__part">
+                    <th class="list__technique">Technika:</th>
+                    <td class="list__1">{{itemWinter.technique}}</td>
+                </tr>
+                <tr class="list__part">
+                    <th class="list__duration">Potřebný čas:</th>
+                    <td class="list__2">{{itemWinter.duration}}</td>
+                </tr>
+                <tr class="list__part">
+                    <th class="list__age">Věk:</th>
+                    <td class="list__3">{{itemWinter.age}}</td>
+                </tr>
+            </table>
+        </div>
     </a>
+</div>
 {% endfor %}    
 </section>
    
