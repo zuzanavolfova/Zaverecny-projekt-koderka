@@ -28,5 +28,10 @@
     font-size: 14px;
     padding: 6px 6px;
     border-radius: 12px;
-    border: 1px solid colors.$color-logo;
+    color: colors.$color-primary;
+    border: 1px solid colors.$color-primary;
+    &:hover {
+        color: white;
+        background-color: colors.$color-primary;
+    }
 }
