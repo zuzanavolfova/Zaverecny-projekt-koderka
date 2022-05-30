@@ -16,6 +16,7 @@
     
     <title> {{title}} </title>
 
+<body onload="loadPictures()">
 <div class="kontejner">
     {% include 'partials/header.njk' %}
 
@@ -26,6 +27,8 @@
 </div>
     <script src="/javaScript/menu.js"></script>
     <script src="/javaScript/glide.min.js"></script>
+    <script src="/javaScript/images.js"></script>
+
     
     <script>
       new Glide('.glide', {
