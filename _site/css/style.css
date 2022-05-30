@@ -473,6 +473,10 @@ h1 {
   padding-bottom: 20px;
 }
 
+.red {
+  color: red;
+}
+
 .download {
   text-decoration: none;
   color: rgb(60, 60, 60);

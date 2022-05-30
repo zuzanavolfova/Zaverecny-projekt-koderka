@@ -31,7 +31,7 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
         </div>
     </section> 
     <section class="instruction__text">
-        <p>{{itemSpring.text}}</p>
+        <p>{{itemSpring.text | safe }}</p>
     </section>
     <section class="instruction__images">
 
