@@ -4,7 +4,7 @@
 @use '../base/basic';
 
 .title-list {
-    margin:0;
+    margin:0 0 20px 0;
 }
 .instruction {
     padding: 20px;
@@ -14,12 +14,30 @@
    
     &__image-main{
         width:100%;
-        object-fit:contain;
-        border-radius: basic.$border-radius;
+        max-width: 460px;
+        border-radius: basic.$border-radius;       
+    }
+    &__table {
+        padding-bottom: 20px;
+        @include mixins.desktop {
+            & tr{
+                  display: flex;
+              }
+            & th {
+                width: 160px;
+                padding-bottom: 10px;
+            }
+        }
     }
     &__basic-info{ 
         text-align: left;
         padding-bottom: 20px;
+        @include mixins.tablet {
+            padding-left: 20px;
+            & th, td {
+            display: block;
+            }
+        }   
     }
     &__images{
         display: flex;
@@ -35,10 +53,14 @@
         @include mixins.desktop {
             flex-basis: calc(100%/6 - 20px)
         }
-
-
+    }
+    &__description {
+        @include mixins.tablet {
+        display: flex
+        }
     }
 }
+
 
 .download {
     @include mixins.link;

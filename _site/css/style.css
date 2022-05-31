@@ -454,7 +454,7 @@ h1 {
 }
 
 .title-list {
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .instruction {
@@ -465,13 +465,32 @@ h1 {
 }
 .instruction__image-main {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 460px;
   border-radius: 4px;
+}
+.instruction__table {
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 900px) {
+  .instruction__table tr {
+    display: flex;
+  }
+  .instruction__table th {
+    width: 160px;
+    padding-bottom: 10px;
+  }
 }
 .instruction__basic-info {
   text-align: left;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 650px) {
+  .instruction__basic-info {
+    padding-left: 20px;
+  }
+  .instruction__basic-info th, .instruction__basic-info td {
+    display: block;
+  }
 }
 .instruction__images {
   display: flex;
@@ -490,6 +509,11 @@ h1 {
 @media screen and (min-width: 900px) {
   .instruction__image-small {
     flex-basis: calc(16.6666666667% - 20px);
+  }
+}
+@media screen and (min-width: 650px) {
+  .instruction__description {
+    display: flex;
   }
 }
 
