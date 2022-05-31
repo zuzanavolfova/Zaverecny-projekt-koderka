@@ -40,6 +40,9 @@ h1 {
     color: colors.$color-text;
     display: flex;
     margin: 20px;
+    &__icon {
+        margin-right: 10px;
+    } 
 }
 
 

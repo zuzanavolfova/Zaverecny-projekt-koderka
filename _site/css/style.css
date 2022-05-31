@@ -41,6 +41,9 @@ h1 {
   display: flex;
   margin: 20px;
 }
+.back__icon {
+  margin-right: 10px;
+}
 
 .footer {
   color: rgb(60, 60, 60);
