@@ -40,7 +40,9 @@ permalink: "podzim/{{ itemAutumn.name | slug }}/"
     </section>
     <section class="instruction__images" >
         {% for imageAutumn in itemAutumn.images %}
-            <img class="instruction__image-small" src="/images/small/{{imageAutumn}}" alt="navod">
+        <a data-fslightbox href="/images/large/{{imageAutumn}}"><img class="instruction__image-small" src="/images/small/{{imageAutumn}}" alt="navod"></a>
         {% endfor %}
     </section>
 </div>
+<script src="/javaScript/fslightbox.js"></script>
+

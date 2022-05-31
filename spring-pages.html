@@ -40,7 +40,9 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
     </section>
     <section class="instruction__images" >
         {% for imageSpring in itemSpring.images %}
-            <img class="instruction__image-small" src="/images/small/{{imageSpring}}" alt="navod">
+        <a data-fslightbox href="/images/large/{{imageSpring}}"><img class="instruction__image-small" src="/images/small/{{imageSpring}}" alt="navod"></a>
         {% endfor %}
     </section>
 </div>
+
+<script src="/javaScript/fslightbox.js"></script>

@@ -40,7 +40,10 @@ permalink: "leto/{{itemSummer.name | slug }}/"
     </section>
     <section class="instruction__images" >
         {% for imageSummer in itemSummer.images %}
-            <img class="instruction__image-small" src="/images/small/{{imageSummer}}" alt="navod">
+        <a data-fslightbox href="/images/large/{{imageSummer}}"><img class="instruction__image-small" src="/images/small/{{imageSummer}}" alt="navod"></a>
         {% endfor %}
     </section>
 </div>
+
+<script src="/javaScript/fslightbox.js"></script>
+
