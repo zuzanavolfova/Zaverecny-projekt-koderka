@@ -516,6 +516,9 @@ h1 {
     display: flex;
   }
 }
+.instruction__title {
+  font-weight: 400;
+}
 
 .download {
   text-decoration: none;

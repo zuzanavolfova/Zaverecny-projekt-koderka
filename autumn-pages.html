@@ -1,0 +1,44 @@
+---
+layout: layouts/main-template.njk
+pagination:
+  data: list.autumn
+  size: 1
+  alias: itemAutumn
+permalink: "podzim/{{ itemAutumn.name | slug }}/"
+---
+<a class="back" href="/podzim/"> ← zpět</a>
+<h1 class="title-list">{{itemAutumn.name}}</h1>
+
+<div class="instruction">
+    <section class="instruction__description">
+        <img class="instruction__image-main" src="/images/small/{{itemAutumn.profileImage}}" alt="itemAutumn.name">
+        <div class="instruction__basic-info">
+            <table class="instruction__table">
+                <tr>
+                    <th class="list__bold">Technika:</th>
+                    <td>{{itemAutumn.technique}}</td>
+                </tr>
+                <tr>
+                    <th class="list__bold">Potřebný čas:</th>
+                    <td>{{itemAutumn.duration}}</td>
+                </tr>
+                <tr>
+                    <th class="list__bold ">Věk:</th>
+                    <td>{{itemAutumn.age}}</td>
+                </tr>
+            </table>
+            <a class="download" href="/images/templates/{{itemAutumn.sablona}}" download="sablona-{{itemAutumn.name}}"> Stáhnout šablonu</a>
+        </div>
+    </section> 
+    <section class="instruction__text">
+        <h2 class="instruction__title">Návod</h2>
+        <p><span>Materiál: </span>{{itemAutumn.material | safe }}</p>
+        <p><span>Příprava: </span>{{itemAutumn.preparation | safe }}</p>
+        <p>{{itemAutumn.text | safe }}</p>
+    </section>
+    <section class="instruction__images" >s
+        {% for imageAutumn in itemAutumn.images %}
+            <img class="instruction__image-small" src="/images/small/{{imageAutumn}}" alt="navod">
+        {% endfor %}
+    </section>
+</div>

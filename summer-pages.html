@@ -4,36 +4,41 @@ pagination:
   data: list.summer
   size: 1
   alias: itemSummer
-permalink: "leto/{{ itemSummer.name | slug }}/"
+permalink: "leto/{{itemSummer.name | slug }}/"
 ---
 <a class="back" href="/leto/"> ← zpět</a>
 <h1 class="title-list">{{itemSummer.name}}</h1>
 
 <div class="instruction">
     <section class="instruction__description">
-        <img class="instruction__image-main" src="/images/small/{{itemSummer.profileImage}}" alt="itemSummer.name">
-        <table class="instruction__basic-info">
-            <tr>
-                <th class="list__bold">Technika</th>
-                <td>{{itemSummer.technique}}</td>
-            </tr>
-            <tr>
-                <th class="list__bold">Potřebný čas</th>
-                <td>{{itemSummer.duration}}</td>
-            </tr>
-            <tr>
-                <th class="list__bold">Věk</th>
-                <td>{{itemSummer.age}}</td>
-            </tr>
-            <tr>
-                <a class="download" href="/images/templates/{{itemSummer.sablona}}" download="sablona-motyl"> Stáhnout šablonu</a> 
-            </tr>
-        </table>
+        <img class="instruction__image-main" src="/images/small/{{itemSummer.profileImage}}" alt="itemSpring.name">
+        <div class="instruction__basic-info">
+            <table class="instruction__table">
+                <tr>
+                    <th class="list__bold">Technika:</th>
+                    <td>{{itemSummer.technique}}</td>
+                </tr>
+                <tr>
+                    <th class="list__bold">Potřebný čas:</th>
+                    <td>{{itemSummer.duration}}</td>
+                </tr>
+                <tr>
+                    <th class="list__bold ">Věk:</th>
+                    <td>{{itemSummer.age}}</td>
+                </tr>
+            </table>
+            <a class="download" href="/images/templates/{{itemSummer.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
+        </div>
     </section> 
     <section class="instruction__text">
-        <p>{{iitemSummer.text}}</p>
+        <h2 class="instruction__title">Návod</h2>
+        <p><span>Materiál: </span>{{itemSummer.material | safe }}</p>
+        <p><span>Příprava: </span>{{itemSummer.preparation | safe }}</p>
+        <p>{{itemSummer.text | safe }}</p>
     </section>
-    <section class="instruction__images">
-
+    <section class="instruction__images" >
+        {% for imageSummer in itemSummer.images %}
+            <img class="instruction__image-small" src="/images/small/{{imageSummer}}" alt="navod">
+        {% endfor %}
     </section>
 </div>

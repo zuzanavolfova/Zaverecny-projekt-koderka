@@ -1,5 +1,5 @@
 ---
-layout: layouts/description.njk
+layout: layouts/main-template.njk
 pagination:
   data: list.spring
   size: 1
@@ -27,15 +27,18 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
                     <td>{{itemSpring.age}}</td>
                 </tr>
             </table>
-            <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-motyl"> Stáhnout šablonu</a>
+            <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
         </div>
     </section> 
     <section class="instruction__text">
+        <h2 class="instruction__title">Návod</h2>
+        <p><span>Materiál: </span>{{itemSpring.material | safe }}</p>
+        <p><span>Příprava: </span>{{itemSpring.preparation | safe }}</p>
         <p>{{itemSpring.text | safe }}</p>
     </section>
-    <section class="instruction__images" >
-        {% for image in itemSpring.images %}
-            <img class="instruction__image-small" src="/images/small/{{image}}" alt="navod">
+    <section class="instruction__images" >s
+        {% for imageSpring in itemSpring.images %}
+            <img class="instruction__image-small" src="/images/small/{{imageSpring}}" alt="navod">
         {% endfor %}
     </section>
 </div>
