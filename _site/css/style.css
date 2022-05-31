@@ -472,9 +472,24 @@ h1 {
   text-align: left;
   padding-bottom: 20px;
 }
-
-.red {
-  color: red;
+.instruction__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.instruction__image-small {
+  flex-basis: calc(50% - 20px);
+  width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .instruction__image-small {
+    flex-basis: calc(25% - 20px);
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__image-small {
+    flex-basis: calc(16.6666666667% - 20px);
+  }
 }
 
 .download {
