@@ -36,7 +36,7 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
         <p><span>Příprava: </span>{{itemSpring.preparation | safe }}</p>
         <p>{{itemSpring.text | safe }}</p>
     </section>
-    <section class="instruction__images" >s
+    <section class="instruction__images" >
         {% for imageSpring in itemSpring.images %}
             <img class="instruction__image-small" src="/images/small/{{imageSpring}}" alt="navod">
         {% endfor %}

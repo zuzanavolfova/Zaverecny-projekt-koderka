@@ -9,9 +9,9 @@ title: Léto
 <section class="list">
 {% for itemSummer in list.summer %}
 <div class="list__item">
-    <a class="list__link" href="/leto/{{itemSummer .name | slug }}/">
+    <a class="list__link" href="/leto/{{itemSummer.name | slug }}/">
         <div class="list__description"> 
-            <img class="list__image" src="/images/small/{{iitemSummer.profileImage}}" alt="{{listItem.name}}">
+            <img class="list__image" src="/images/small/{{itemSummer.profileImage}}" alt="{{listItem.name}}">
             <table class="list__table">
                 <tr class="list__part">
                     <th class="list__name">{{itemSummer.name}}</th>
