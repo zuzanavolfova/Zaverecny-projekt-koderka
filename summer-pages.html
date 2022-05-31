@@ -27,7 +27,9 @@ permalink: "leto/{{itemSummer.name | slug }}/"
                     <td>{{itemSummer.age}}</td>
                 </tr>
             </table>
+            {% if itemSummer.sablona !== " " %}
             <a class="download" href="/images/templates/{{itemSummer.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
+            {% endif %}
         </div>
     </section> 
     <section class="instruction__text">

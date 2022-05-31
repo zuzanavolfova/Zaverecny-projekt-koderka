@@ -27,7 +27,9 @@ permalink: "zima/{{ itemWinter.name | slug }}/"
                     <td>{{itemWinter.age}}</td>
                 </tr>
             </table>
+            {% if itemWinter.sablona !== " " %}
             <a class="download" href="/images/templates/{{itemWinter.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
+            {% endif %}
         </div>
     </section> 
     <section class="instruction__text">
@@ -36,7 +38,7 @@ permalink: "zima/{{ itemWinter.name | slug }}/"
         <p><span>Příprava: </span>{{itemWinter.preparation | safe }}</p>
         <p>{{itemWinter.text | safe }}</p>
     </section>
-    <section class="instruction__images" >s
+    <section class="instruction__images" >
         {% for imageWinter in itemWinter.images %}
             <img class="instruction__image-small" src="/images/small/{{imageWinter}}" alt="navod">
         {% endfor %}
