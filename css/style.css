@@ -475,6 +475,9 @@ h1 {
 .instruction__table {
   padding-bottom: 20px;
 }
+.instruction__table th {
+  padding-right: 20px;
+}
 .instruction__basic-info {
   text-align: left;
   padding-bottom: 20px;
@@ -482,18 +485,6 @@ h1 {
 @media screen and (min-width: 650px) {
   .instruction__basic-info {
     padding-left: 20px;
-  }
-  .instruction__basic-info th, .instruction__basic-info td {
-    display: block;
-  }
-}
-@media screen and (min-width: 900px) {
-  .instruction__basic-info th, .instruction__basic-info td {
-    display: inline-block;
-  }
-  .instruction__basic-info tr {
-    display: inline-block;
-    margin-right: 10px;
   }
 }
 .instruction__images {
@@ -527,6 +518,7 @@ h1 {
 .download {
   text-decoration: none;
   color: rgb(60, 60, 60);
+  max-height: 36px;
   font-size: 16px;
   padding: 6px 10px;
   border-radius: 12px;

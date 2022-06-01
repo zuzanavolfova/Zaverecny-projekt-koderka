@@ -19,27 +19,15 @@
     }
     &__table {
         padding-bottom: 20px;
+        & th {
+            padding-right: 20px;
+        }
     }
-  
     &__basic-info{ 
         text-align: left;
         padding-bottom: 20px;
         @include mixins.tablet {
             padding-left: 20px;
-            & th, td {
-            display: block;
-            }
-        }
-        @include mixins.desktop {
-            & th, td {
-                display: inline-block;
-               
-            }
-            & tr {
-                display: inline-block;
-                margin-right: 10px;
-            
-            }
         }
     }
     &__images{
@@ -59,7 +47,8 @@
     }
     &__description {
         @include mixins.tablet {
-        display: flex
+        display: flex;
+        
         }
     }
     &__title {
@@ -70,6 +59,7 @@
 
 .download {
     @include mixins.link;
+    max-height: 36px;
     font-size: 16px;
     padding: 6px 10px;
     border-radius: 12px;
