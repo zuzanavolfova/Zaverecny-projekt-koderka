@@ -537,30 +537,56 @@ h1 {
   color: rgb(60, 60, 60);
 }
 
-.project {
-  color: rgb(60, 60, 60);
+.tips__title {
+  margin-top: 20px;
+}
+
+.tips {
   padding: 20px;
 }
-.project__title {
-  color: rgb(60, 60, 60);
+.tips h2 {
+  color: rgb(123, 123, 123);
   font-weight: 400;
 }
-.project__omne {
-  display: flex;
-}
-@media screen and (min-width: 900px) {
-  .project__omne {
-    max-width: 940px;
-  }
-}
-.project__foto {
+.tips__text {
   display: none;
 }
-@media screen and (min-width: 650px) {
-  .project__foto {
-    display: flex;
-    max-width: 300px;
-    border-radius: 4px 180px 4px 4px;
-    padding: 20px 20px 20px 0;
-  }
+
+.tips__close {
+  display: none;
+}
+
+.check {
+  position: absolute;
+  left: -9999px;
+}
+
+.check1:checked + label .tip-1 {
+  display: block;
+}
+.check1:checked + label .tips__close {
+  display: inline-block;
+}
+.check1:checked + label .tips__open {
+  display: none;
+}
+
+.check2:checked + label .tip-2 {
+  display: block;
+}
+.check2:checked + label .tips__close {
+  display: inline-block;
+}
+.check2:checked + label .tips__open {
+  display: none;
+}
+
+.check3:checked + label .tip-3 {
+  display: block;
+}
+.check3:checked + label .tips__close {
+  display: inline-block;
+}
+.check3:checked + label .tips__open {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
