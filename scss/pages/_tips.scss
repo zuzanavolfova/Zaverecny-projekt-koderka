@@ -1,0 +1,59 @@
+@use '../base/colors';
+@use '../abstracts/mixins';
+@use '../base/basic';
+
+.tips__title{
+    margin-top: 20px;
+}
+.tips{
+    padding: 20px;
+    h2 {
+        color: colors.$color-logo;
+        font-weight: 400;
+    }
+    &__text {
+        display: none;
+    }  
+}
+.tips__close {
+    display: none;
+}
+.check {
+    position: absolute;
+    left: -9999px;
+}
+.check1:checked + label {
+    .tip-1 {
+        display: block;
+    }
+    .tips__close {
+        display: inline-block;
+    }
+    .tips__open {
+        display: none;
+    }
+}
+
+.check2:checked + label {
+    .tip-2 {
+        display: block;
+    }
+    .tips__close {
+        display: inline-block;
+    }
+    .tips__open {
+        display: none;
+    }
+}
+.check3:checked + label {
+    .tip-3 {
+        display: block;
+    }
+    .tips__close {
+        display: inline-block;
+    }
+    .tips__open {
+        display: none;
+    }
+}
+
