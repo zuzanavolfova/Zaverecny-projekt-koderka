@@ -19,16 +19,8 @@
     }
     &__table {
         padding-bottom: 20px;
-        @include mixins.desktop {
-            & tr{
-                  display: flex;
-              }
-            & th {
-                width: 160px;
-                padding-bottom: 10px;
-            }
-        }
     }
+  
     &__basic-info{ 
         text-align: left;
         padding-bottom: 20px;
@@ -37,7 +29,18 @@
             & th, td {
             display: block;
             }
-        }   
+        }
+        @include mixins.desktop {
+            & th, td {
+                display: inline-block;
+               
+            }
+            & tr {
+                display: inline-block;
+                margin-right: 10px;
+            
+            }
+        }
     }
     &__images{
         display: flex;
@@ -77,4 +80,3 @@
         background-color: colors.$color-primary;
     }
 }
-

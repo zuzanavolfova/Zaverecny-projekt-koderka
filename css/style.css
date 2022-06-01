@@ -475,15 +475,6 @@ h1 {
 .instruction__table {
   padding-bottom: 20px;
 }
-@media screen and (min-width: 900px) {
-  .instruction__table tr {
-    display: flex;
-  }
-  .instruction__table th {
-    width: 160px;
-    padding-bottom: 10px;
-  }
-}
 .instruction__basic-info {
   text-align: left;
   padding-bottom: 20px;
@@ -494,6 +485,15 @@ h1 {
   }
   .instruction__basic-info th, .instruction__basic-info td {
     display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__basic-info th, .instruction__basic-info td {
+    display: inline-block;
+  }
+  .instruction__basic-info tr {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 .instruction__images {
