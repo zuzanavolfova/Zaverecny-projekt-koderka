@@ -690,4 +690,14 @@ h1 {
 }
 .check3:checked + label .tips__open {
   display: none;
+}
+
+.check4:checked + label .tip-4 {
+  display: block;
+}
+.check4:checked + label .tips__close {
+  display: inline-block;
+}
+.check4:checked + label .tips__open {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

@@ -64,3 +64,15 @@
     }
 }
 
+.check4:checked + label {
+    .tip-4 {
+        display: block;
+    }
+    .tips__close {
+        display: inline-block;
+    }
+    .tips__open {
+        display: none;
+    }
+}
+
