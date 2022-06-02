@@ -68,7 +68,20 @@
         "preparation":"přečtěte si s dětmi příběh o sv. Martinovi. Vydejte se na výlet na farmu s koňmi. Navštivte kostel zasvěcený sv. Martinovi.",
         "text": "<p><strong>1. Na tvrdý papír vytiskněte šablonu koně a vnitřní část vystřihněte.</strong></p><p><strong>2. Na černý papír přiložte šablonu koně</strong> a přidělejte ji kancelářskou sponkou.</p><p><strong>3. Bílou barvou přejíždějte přes okraje šablony.</strong> Použijte plochý štětec.Takto vytvoříte obrys koně. Na hřívu a osas můžete nanášet velké množství barvy a vytvořit tak plastický efekt hřívy a žíní.<p><p><strong>4. Kartáček namočte do bílé barvy a přejíždějte po něm prstem tak, aby barva stříkala.</strong> Takto vytvoříte efekt sněžení. Nebo můžete vločky namalovat obtiskem prstu namočeným v barvě.",
         "images": [""]
-        }
+        },
+        {
+            "category": "autumn",
+            "name": "Zavarena jablíčka",
+            "technique": "tempera",
+            "duration": "40 min",
+            "age": "od 2 let",
+            "profileImage": "zavarovani.jpg",
+            "sablona": "zavarovani-sablona.png",
+            "material":"tvrdý papír libovolného rozměru. Temperové barvy, jablko nebo hruška nebo citron",
+            "preparation":"pozorujte jak na stromě dozrává ovoce, jak padá na zem a na zemi hnije. Pozorujte jeho barvy.",
+            "text": "<p><strong>1.Nakreslete na papír zavařovací sklenici.</strong> Můžete ji i obkreslit z přiložené šablony.</p><p><strong>2. Rozkrojte ovoce na polovinu.</strong></p><p><strong>3. Potřete ovoce barvou.</strong> Můžete použít jednu barvu nebo více barev.</p><p><strong>4. Obtiskněte ovoce na papír.</strong> Můžete otisknout jednou a pak znovu natřít nebo obtisknout víckrát.<p><strong>Pozorujte jak se barvy do sebe smíchaly</strong>, jaká vzniká struktura obtisku.",
+            "images": [""]
+            }
     ],
     "winter": [
         {
