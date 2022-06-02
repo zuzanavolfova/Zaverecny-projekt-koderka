@@ -48,7 +48,6 @@
     &__description {
         @include mixins.tablet {
         display: flex;
-        
         }
     }
     &__title {
