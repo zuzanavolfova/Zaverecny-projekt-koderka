@@ -6,32 +6,32 @@ pagination:
   alias: itemSpring
 permalink: "jaro/{{ itemSpring.name | slug }}/"
 ---
-<a class="back" href="/jaro/"> <img class="back__icon" src="/images/icons/back.png"> zpět</a>
+<a class="back" href="/jaro/"> <img class="back__icon" src="/images/icons/back.png"> zpět na seznam jarního tvoření</a>
 <h1 class="title-list">{{itemSpring.name}}</h1>
 
 <div class="instruction">
     <img class="instruction__image-main" src="/images/small/{{itemSpring.profileImage}}" alt="itemSpring.name">
     <section class="instruction__description">
         
-        <div class="instruction__basic-info">
-            <table class="instruction__table">
-                <tr>
-                    <th >Technika:</th>
-                    <td>{{itemSpring.technique}}</td>
-                </tr>
-                <tr>
-                    <th >Potřebný čas:</th>
-                    <td>{{itemSpring.duration}}</td>
-                </tr> 
-                <tr>   
-                    <th >Věk:</th>
-                    <td>{{itemSpring.age}}</td>
-                <tr>
-            </table>
-            {% if itemSpring.sablona !== " " %}
-            <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
-            {% endif %}
-        </div>
+            <div class="instruction__basic-info">
+                <div class="instruction__item">
+                    <p class="instruction__bold">Technika:</p>
+                    <p>{{itemSpring.technique}}</p>
+                </div>
+                <div class="instruction__item">
+                    <p class="instruction__bold">Potřebný čas:</p>
+                    <p>{{itemSpring.duration}}</p>
+                </div> 
+                <div class="instruction__item"> 
+                    <p class="instruction__bold">Věk:</p>
+                    <p>{{itemSpring.age}}</p>
+                </div>
+            </div>
+            <div>
+                {% if itemSpring.sablona !== " " %}
+                <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
+                {% endif %}
+            </div>
     </section> 
     <section class="instruction__text">
         <h2 class="instruction__title">Návod</h2>

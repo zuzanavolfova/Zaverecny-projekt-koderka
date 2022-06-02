@@ -15,23 +15,41 @@
         display: flex;
         flex-wrap: wrap;
     }
+    &__bold {
+        font-weight: bold;
+        margin: 10px 0 0 0;
+    }
+    &__description {
+        p {
+            margin: 0;
+            @include mixins.desktop {
+                padding-left: 10px;
+            }
+        }
+        @include mixins.tablet {
+            margin-left: 20px;
+        }
+    }
+    &__item {
+        margin: 10px 10px 0 0;
+        @include mixins.desktop {
+            display: flex;
+        }
+    }
     &__image-main{
         width:100%;
         max-width: 460px;
         border-radius: basic.$border-radius;
     }
-    &__table {
-        padding-bottom: 20px;
-        & th {
-            padding-right: 20px;
-        }
-    }
-    &__basic-info{ 
-        text-align: left;
-        padding-bottom: 20px;
+    &__basic-info {
+        margin-bottom: 20px;
+        display: flex;
         @include mixins.tablet {
-            padding-left: 20px;
-        } 
+            display: block;
+        }
+        @include mixins.desktop {
+            display: flex;
+        }
     }
     &__text {
         @include mixins.tablet {
@@ -51,11 +69,7 @@
             flex-basis: calc(25% - 20px)
         }
     }
-    &__description {
-        @include mixins.tablet {
-        display: flex;
-        }
-    }
+
     &__title {
         font-weight: 400;
     }
@@ -63,7 +77,8 @@
 
 .download {
     @include mixins.link;
-    max-height: 36px;
+    margin-top: 10px;
+    // max-height: 36px;
     font-size: 16px;
     padding: 6px 10px;
     border-radius: 12px;
@@ -74,3 +89,4 @@
         background-color: colors.$color-primary;
     }
 }
+

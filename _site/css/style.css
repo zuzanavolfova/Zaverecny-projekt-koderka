@@ -472,24 +472,48 @@ h1 {
     flex-wrap: wrap;
   }
 }
+.instruction__bold {
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+.instruction__description p {
+  margin: 0;
+}
+@media screen and (min-width: 900px) {
+  .instruction__description p {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .instruction__description {
+    margin-left: 20px;
+  }
+}
+.instruction__item {
+  margin: 10px 10px 0 0;
+}
+@media screen and (min-width: 900px) {
+  .instruction__item {
+    display: flex;
+  }
+}
 .instruction__image-main {
   width: 100%;
   max-width: 460px;
   border-radius: 4px;
 }
-.instruction__table {
-  padding-bottom: 20px;
-}
-.instruction__table th {
-  padding-right: 20px;
-}
 .instruction__basic-info {
-  text-align: left;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
 }
 @media screen and (min-width: 650px) {
   .instruction__basic-info {
-    padding-left: 20px;
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__basic-info {
+    display: flex;
   }
 }
 @media screen and (min-width: 650px) {
@@ -511,11 +535,6 @@ h1 {
     flex-basis: calc(25% - 20px);
   }
 }
-@media screen and (min-width: 650px) {
-  .instruction__description {
-    display: flex;
-  }
-}
 .instruction__title {
   font-weight: 400;
 }
@@ -523,7 +542,7 @@ h1 {
 .download {
   text-decoration: none;
   color: rgb(60, 60, 60);
-  max-height: 36px;
+  margin-top: 10px;
   font-size: 16px;
   padding: 6px 10px;
   border-radius: 12px;
