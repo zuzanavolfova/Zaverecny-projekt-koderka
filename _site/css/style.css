@@ -472,21 +472,36 @@ h1 {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 900px) {
+  .instruction {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "image-main basic-info" "image-main text" "image      text";
+    gap: 20px;
+  }
+}
 .instruction__bold {
   font-weight: bold;
   margin: 10px 0 0 0;
 }
-.instruction__description p {
-  margin: 0;
+.instruction__info {
+  margin: 10px 0 0 0;
 }
 @media screen and (min-width: 900px) {
-  .instruction__description p {
+  .instruction__info {
     padding-left: 10px;
   }
 }
 @media screen and (min-width: 650px) {
   .instruction__description {
     margin-left: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__description {
+    grid-area: basic-info;
+    margin: 0;
   }
 }
 .instruction__item {
@@ -501,6 +516,12 @@ h1 {
   width: 100%;
   max-width: 460px;
   border-radius: 4px;
+}
+@media screen and (min-width: 900px) {
+  .instruction__image-main {
+    grid-area: image-main;
+    max-width: 350px;
+  }
 }
 .instruction__basic-info {
   margin-bottom: 20px;
@@ -521,10 +542,20 @@ h1 {
     flex-basis: 100%;
   }
 }
+@media screen and (min-width: 900px) {
+  .instruction__text {
+    grid-area: text;
+  }
+}
 .instruction__images {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media screen and (min-width: 900px) {
+  .instruction__images {
+    grid-area: image;
+  }
 }
 .instruction__image-small {
   flex-basis: calc(50% - 20px);
@@ -533,6 +564,11 @@ h1 {
 @media screen and (min-width: 650px) {
   .instruction__image-small {
     flex-basis: calc(25% - 20px);
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__image-small {
+    flex-basis: 100%;
   }
 }
 .instruction__title {

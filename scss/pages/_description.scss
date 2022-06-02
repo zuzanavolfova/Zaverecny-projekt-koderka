@@ -15,19 +15,34 @@
         display: flex;
         flex-wrap: wrap;
     }
+    @include mixins.desktop{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "image-main basic-info"
+        "image-main text"
+        "image      text";
+        gap: 20px;
+    }
     &__bold {
         font-weight: bold;
         margin: 10px 0 0 0;
     }
-    &__description {
-        p {
-            margin: 0;
-            @include mixins.desktop {
-                padding-left: 10px;
-            }
+    &__info {
+        margin: 10px 0 0 0;
+        @include mixins.desktop {
+            padding-left: 10px;
         }
+    }
+    &__description {
+
         @include mixins.tablet {
             margin-left: 20px;
+        }
+        @include mixins.desktop {
+            grid-area: basic-info;
+            margin: 0;
         }
     }
     &__item {
@@ -40,6 +55,10 @@
         width:100%;
         max-width: 460px;
         border-radius: basic.$border-radius;
+        @include mixins.desktop {
+            grid-area: image-main;
+            max-width: 350px;
+        }
     }
     &__basic-info {
         margin-bottom: 20px;
@@ -51,15 +70,22 @@
             display: flex;
         }
     }
+  
     &__text {
         @include mixins.tablet {
             flex-basis: 100%;
+        }
+        @include mixins.desktop {
+            grid-area: text;
         }
     }
     &__images{
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        @include mixins.desktop { 
+        grid-area: image;
+        }
        
     }
     &__image-small {
@@ -67,6 +93,9 @@
         width: 100%;
         @include mixins.tablet {
             flex-basis: calc(25% - 20px)
+        }
+        @include mixins.desktop {
+            flex-basis: 100%;
         }
     }
 
