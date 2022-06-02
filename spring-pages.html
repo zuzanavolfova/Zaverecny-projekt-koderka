@@ -12,7 +12,6 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
 <div class="instruction">
     <img class="instruction__image-main" src="/images/small/{{itemSpring.profileImage}}" alt="itemSpring.name">
     <section class="instruction__description">
-        
             <div class="instruction__basic-info">
                 <div class="instruction__item">
                     <p class="instruction__bold">Technika:</p>
@@ -33,11 +32,11 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
                 {% endif %}
             </div>
     </section> 
-    <section class="instruction__text">
+    <section class="instruction__text-layout">
         <h2 class="instruction__title">Návod</h2>
-        <p><span>Materiál: </span>{{itemSpring.material | safe }}</p>
-        <p><span>Příprava: </span>{{itemSpring.preparation | safe }}</p>
-        <p>{{itemSpring.text | safe }}</p>
+        <p class="instruction__material"><span class="bold">Materiál: </span>{{itemSpring.material | safe }}</p>
+        <p class="instruction__priprava"><span class="bold">Příprava: </span>{{itemSpring.preparation | safe }}</p>
+        <div class="instruction__text">{{itemSpring.text | safe }}</div>
     </section>
     <section class="instruction__images" >
         {% for imageSpring in itemSpring.images %}

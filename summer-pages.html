@@ -6,35 +6,37 @@ pagination:
   alias: itemSummer
 permalink: "leto/{{itemSummer.name | slug }}/"
 ---
-<a class="back" href="/leto/"> <img class="back__icon" src="/images/icons/back.png"> zpět</a>
+<a class="back" href="/leto/"> <img class="back__icon" src="/images/icons/back.png"> zpět na seznam letního tvoření</a>
 <h1 class="title-list">{{itemSummer.name}}</h1>
 
 <div class="instruction">
     <img class="instruction__image-main" src="/images/small/{{itemSummer.profileImage}}" alt="itemSpring.name">
     <section class="instruction__description">
         <div class="instruction__basic-info">
-            <table class="instruction__table">
-                <tr>
-                    <th >Technika:</th>
-                    <th >Potřebný čas:</th>
-                    <th >Věk:</th>
-                </tr>
-                <tr>
-                    <td>{{itemSummer.technique}}</td>
-                    <td>{{itemSummer.duration}}</td>
-                    <td>{{itemSummer.age}}</td>
-                </tr>
-            </table>
+            <div class="instruction__item">
+                <p class="instruction__bold">Technika:</p>
+                <p class="instruction__info">{{itemSummer.technique}}</p>
+            </div>
+            <div class="instruction__item">
+                <p class="instruction__bold">Potřebný čas:</p>
+                <p class="instruction__info">{{itemSummer.duration}}</p>
+            </div> 
+            <div class="instruction__item"> 
+                <p class="instruction__bold">Věk:</p>
+                <p class="instruction__info">{{itemSummer.age}}</p>
+            </div>
+        </div>
+        <div>
             {% if itemSummer.sablona !== " " %}
             <a class="download" href="/images/templates/{{itemSummer.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
             {% endif %}
         </div>
     </section> 
-    <section class="instruction__text">
+    <section class="instruction__text-layout">
         <h2 class="instruction__title">Návod</h2>
-        <p><span>Materiál: </span>{{itemSummer.material | safe }}</p>
-        <p><span>Příprava: </span>{{itemSummer.preparation | safe }}</p>
-        <p>{{itemSummer.text | safe }}</p>
+        <p class="instruction__material"><span class="bold">Materiál: </span>{{itemSummer.material | safe }}</p>
+        <p class="instruction__priprava"><span class="bold">Příprava: </span>{{itemSummer.preparation | safe }}</p>
+        <div class="instruction__text">{{itemSummer.text | safe }}</div>
     </section>
     <section class="instruction__images" >
         {% for imageSummer in itemSummer.images %}

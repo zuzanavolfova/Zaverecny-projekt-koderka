@@ -46,6 +46,10 @@ h1 {
   margin-right: 10px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .footer {
   color: rgb(60, 60, 60);
   font-size: 12px;
@@ -538,13 +542,15 @@ h1 {
   }
 }
 @media screen and (min-width: 650px) {
-  .instruction__text {
+  .instruction__text-layout {
     flex-basis: 100%;
   }
 }
 @media screen and (min-width: 900px) {
-  .instruction__text {
+  .instruction__text-layout {
     grid-area: text;
+    display: flex;
+    flex-direction: column;
   }
 }
 .instruction__images {
@@ -573,6 +579,27 @@ h1 {
 }
 .instruction__title {
   font-weight: 400;
+  margin-top: 20px;
+}
+@media screen and (min-width: 900px) {
+  .instruction__title {
+    order: 2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__material {
+    order: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__priprava {
+    order: 1;
+  }
+}
+@media screen and (min-width: 900px) {
+  .instruction__text {
+    order: 3;
+  }
 }
 
 .download {

@@ -71,12 +71,15 @@
         }
     }
   
-    &__text {
+    &__text-layout {
         @include mixins.tablet {
             flex-basis: 100%;
         }
         @include mixins.desktop {
             grid-area: text;
+            display: flex;
+            // flex-wrap: wrap;
+            flex-direction: column;
         }
     }
     &__images{
@@ -101,6 +104,26 @@
 
     &__title {
         font-weight: 400;
+        margin-top: 20px;
+        @include mixins.desktop {
+            order:2;
+            }
+    }
+    &__material {
+        @include mixins.desktop {
+            order:0;
+        }
+    }
+    &__priprava {
+        @include mixins.desktop {
+            order:1;
+        }
+    }
+    &__text {
+        @include mixins.desktop {
+            order:3;
+        }
+
     }
 }
 
