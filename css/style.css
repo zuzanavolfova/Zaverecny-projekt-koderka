@@ -633,6 +633,10 @@ h1 {
   margin-top: 20px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .tips {
   padding: 20px;
 }
@@ -646,6 +650,11 @@ h1 {
 
 .tips__close {
   display: none;
+  font-size: 20px;
+}
+
+.tips__open {
+  font-size: 20px;
 }
 
 .check {

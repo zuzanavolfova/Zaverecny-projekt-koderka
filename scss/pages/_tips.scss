@@ -5,6 +5,9 @@
 .tips__title{
     margin-top: 20px;
 }
+.pointer {
+    cursor: pointer;
+}
 .tips{
     padding: 20px;
     h2 {
@@ -17,6 +20,10 @@
 }
 .tips__close {
     display: none;
+    font-size: 20px;
+}
+.tips__open {
+    font-size: 20px;
 }
 .check {
     position: absolute;
