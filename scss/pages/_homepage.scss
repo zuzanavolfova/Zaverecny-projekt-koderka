@@ -11,38 +11,11 @@
     @include mixins.tablet{
         padding: 20px;
     }
-    &__item {
-        flex-basis: 100%;
-        flex-grow: 1;
-        background-color: white;
-        text-align: right;
-        border-radius: 4px;
-        text-decoration: none;
-        height: 140px;
-        @include mixins.tablet{
-            flex-basis: calc(25% - 20px);
-            border-radius: 4px;
-        }
-        @include mixins.desktop{
-            flex-basis: 40%;
-            height: 200px ;
-        }
-       
-        &:hover {
-            opacity: 86%;
-        }
-        &:hover .navigation__text{
-          color: white;
-          background-color: colors.$color-primary;
-          font-weight: 400;
-          box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
-        }
-    }
     &__text {
         text-decoration: none;
         color: colors.$color-primary;
         font-weight: 400;
-        padding: 5px 10px;
+        padding: 10px 20px;
         font-size: 18px;
         background-color: white;
         border-radius: 40px 0 0 40px ;
@@ -55,8 +28,36 @@
             top: 116px;
             font-size: 20px;
         }
-        
     }  
+    &__item {
+        flex-basis: 100%;
+        flex-grow: 1;
+        background-color: white;
+        text-align: right;
+        border-radius: 4px;
+        text-decoration: none;
+        height: 140px;
+        position: relative;
+        @include mixins.tablet{
+            flex-basis: calc(25% - 20px);
+            border-radius: 4px;
+        }
+        @include mixins.desktop{
+            flex-basis: 40%;
+            height: 200px ;
+        }
+        &:hover {
+            opacity: 86%;
+        }
+        &:hover .navigation__text{
+            color: white;
+            background-color: colors.$color-primary;
+            font-weight: 400;
+            padding: 10px 20px;
+            box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
+        }
+    }
+    
     &__background1 {
         background-image: url(/images/background/navigation-spring-small.JPG);
         background-position: center;
