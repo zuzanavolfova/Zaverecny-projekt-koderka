@@ -55,6 +55,9 @@
         width:100%;
         max-width: 460px;
         border-radius: basic.$border-radius;
+        @include mixins.tablet {
+            max-width: 400px;
+        }
         @include mixins.desktop {
             grid-area: image-main;
             max-width: 350px;

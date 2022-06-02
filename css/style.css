@@ -521,6 +521,11 @@ h1 {
   max-width: 460px;
   border-radius: 4px;
 }
+@media screen and (min-width: 650px) {
+  .instruction__image-main {
+    max-width: 400px;
+  }
+}
 @media screen and (min-width: 900px) {
   .instruction__image-main {
     grid-area: image-main;
