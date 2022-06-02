@@ -17,14 +17,16 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
             <table class="instruction__table">
                 <tr>
                     <th >Technika:</th>
-                    <th >Potřebný čas:</th>
-                    <th >Věk:</th>
+                    <td>{{itemSpring.technique}}</td>
                 </tr>
                 <tr>
-                    <td>{{itemSpring.technique}}</td>
+                    <th >Potřebný čas:</th>
                     <td>{{itemSpring.duration}}</td>
+                </tr> 
+                <tr>   
+                    <th >Věk:</th>
                     <td>{{itemSpring.age}}</td>
-                </tr>
+                <tr>
             </table>
             {% if itemSpring.sablona !== " " %}
             <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>

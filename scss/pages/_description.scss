@@ -11,11 +11,14 @@
     margin: 0 auto;
     font-size: 18px;
     background-color: white;
-   
+    @include mixins.tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__image-main{
         width:100%;
         max-width: 460px;
-        border-radius: basic.$border-radius;       
+        border-radius: basic.$border-radius;
     }
     &__table {
         padding-bottom: 20px;
@@ -28,21 +31,24 @@
         padding-bottom: 20px;
         @include mixins.tablet {
             padding-left: 20px;
+        } 
+    }
+    &__text {
+        @include mixins.tablet {
+            flex-basis: 100%;
         }
     }
     &__images{
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+       
     }
     &__image-small {
         flex-basis: calc(50% - 20px);
         width: 100%;
         @include mixins.tablet {
             flex-basis: calc(25% - 20px)
-        }
-        @include mixins.desktop {
-            flex-basis: calc(100%/6 - 20px)
         }
     }
     &__description {
@@ -54,7 +60,6 @@
         font-weight: 400;
     }
 }
-
 
 .download {
     @include mixins.link;

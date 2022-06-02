@@ -466,6 +466,12 @@ h1 {
   font-size: 18px;
   background-color: white;
 }
+@media screen and (min-width: 650px) {
+  .instruction {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .instruction__image-main {
   width: 100%;
   max-width: 460px;
@@ -486,6 +492,11 @@ h1 {
     padding-left: 20px;
   }
 }
+@media screen and (min-width: 650px) {
+  .instruction__text {
+    flex-basis: 100%;
+  }
+}
 .instruction__images {
   display: flex;
   flex-wrap: wrap;
@@ -498,11 +509,6 @@ h1 {
 @media screen and (min-width: 650px) {
   .instruction__image-small {
     flex-basis: calc(25% - 20px);
-  }
-}
-@media screen and (min-width: 900px) {
-  .instruction__image-small {
-    flex-basis: calc(16.6666666667% - 20px);
   }
 }
 @media screen and (min-width: 650px) {
