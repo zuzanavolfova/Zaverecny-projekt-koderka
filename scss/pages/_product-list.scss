@@ -29,9 +29,6 @@
         &:hover {
             box-shadow: none;
             box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.20);
-            & .list__description {
-                padding: 10px;
-            }
         }
     }
     &__description{

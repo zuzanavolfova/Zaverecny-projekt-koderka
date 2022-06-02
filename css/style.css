@@ -413,9 +413,6 @@ h1 {
   box-shadow: none;
   box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.2);
 }
-.list__item:hover .list__description {
-  padding: 10px;
-}
 .list__description {
   padding: 20px;
   display: grid;
