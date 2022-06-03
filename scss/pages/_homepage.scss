@@ -90,6 +90,7 @@
     text-align: center;
     margin: 0;
     padding: 20px 10px 0 10px;
+   
     @include mixins.tablet{
         font-size: 24px;
         padding-top: 40px;
