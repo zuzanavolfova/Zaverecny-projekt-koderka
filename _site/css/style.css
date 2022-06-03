@@ -24,11 +24,6 @@ body {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
-@media screen and (min-width: 900px) {
-  .kontejner {
-    padding-top: 40px;
-  }
-}
 
 h1 {
   color: #0097A7;
@@ -191,6 +186,7 @@ h1 {
 }
 @media screen and (min-width: 900px) {
   .header {
+    padding: 40px;
     grid-template-columns: 700px 1fr 120px 80px;
     grid-template-rows: 60px 40px;
     grid-template-areas: "logo logo       logo  logo  " "menu whitespace about search";

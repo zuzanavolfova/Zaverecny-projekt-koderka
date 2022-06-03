@@ -44,6 +44,7 @@
     }
 
     @include mixins.desktop{
+        padding: 40px;
         grid-template-columns: 700px 1fr 120px 80px ;
         grid-template-rows:60px 40px ;
         grid-template-areas:
