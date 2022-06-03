@@ -134,7 +134,7 @@ h1 {
   font-size: 18px;
   text-decoration: none;
   background-color: white;
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 @media screen and (min-width: 900px) {
   .menu-desktop__item a {
@@ -233,7 +233,6 @@ h1 {
 @media screen and (min-width: 650px) {
   .header__logo {
     padding: 0;
-    margin-bottom: 20px;
     font-size: 32px;
   }
 }
@@ -246,28 +245,26 @@ h1 {
 }
 .header__butterfly {
   display: none;
-  width: 50px;
-  position: relative;
-  right: -20px;
-}
-@media screen and (min-width: 500px) {
-  .header__butterfly {
-    display: flex;
-  }
+  width: 40px;
+  position: absolute;
 }
 @media screen and (min-width: 650px) {
   .header__butterfly {
-    padding-top: 20px;
-    width: 80px;
-    right: -60px;
+    display: flex;
+    width: 60px;
+    top: 16px;
+    right: 240px;
   }
 }
 @media screen and (min-width: 900px) {
   .header__butterfly {
-    padding-top: 20px;
-    width: 120px;
-    right: -60px;
-    top: 20px;
+    width: 80px;
+    right: 10vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header__butterfly {
+    right: 20vw;
   }
 }
 .header__search {

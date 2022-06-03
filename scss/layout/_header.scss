@@ -88,7 +88,7 @@
         
         @include mixins.tablet{
             padding: 0;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             font-size: 32px;
         }
         @include mixins.desktop{
@@ -99,22 +99,20 @@
     }
     &__butterfly {
         display: none;
-        width: 50px;
-        position: relative;
-        right: -20px;
-        @media screen and (min-width: 500px) {
-            display:flex;
-        }
+        width: 40px;
+        position: absolute;
         @include mixins.tablet{
-            padding-top: 20px;
-            width: 80px;
-            right: -60px;
+            display: flex;
+            width: 60px;
+            top: 16px;
+            right: 240px;
         }
         @include mixins.desktop{
-            padding-top: 20px;
-            width: 120px;
-            right: -60px;
-            top:20px
+            width: 80px;
+            right: 10vw;
+        }
+        @media screen and (min-width: 1400px){
+            right:20vw;
         }
     }
     &__search {
