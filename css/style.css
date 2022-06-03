@@ -70,7 +70,7 @@ h1 {
   line-height: 2;
 }
 
-.menu-mobile .menu-mobile__button {
+.menu-mobile__button {
   padding: 5px 10px;
   background-color: #0097A7;
   color: white;
@@ -79,7 +79,6 @@ h1 {
   font-size: 20px;
   grid-area: menu;
 }
-
 .menu-mobile__list {
   display: none;
   padding: 10px;
@@ -91,20 +90,17 @@ h1 {
   position: absolute;
   z-index: 1;
 }
-
 .menu-mobile__item {
   text-decoration: none;
   color: rgb(60, 60, 60);
   list-style: none;
 }
-
 .menu-mobile__item a {
   text-decoration: none;
   color: rgb(60, 60, 60);
   display: flex;
   align-items: center;
 }
-
 .menu-mobile__icon {
   padding: 10px 10px;
   margin-right: 10px;
@@ -128,11 +124,9 @@ h1 {
   list-style: none;
   padding-top: 20px;
 }
-
 .menu-desktop__item--active .menu-desktop__link {
   border-bottom: 2px solid rgba(0, 151, 167, 0.6);
 }
-
 .menu-desktop__item a {
   width: 100%;
   color: #0097A7;

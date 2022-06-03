@@ -46,7 +46,6 @@
         border-radius: basic.$border-radius;
         width: 100%;
         grid-area: image;
-        
     }
     &__table {
         padding-left:10px;
@@ -54,7 +53,6 @@
         @include mixins.desktop {
         padding:0;
         }
-
     }
     &__part th {
         text-align: left;
@@ -70,7 +68,6 @@
         font-size: 20px;
         font-weight: 400;
     }
-  
     &__link {
         @include mixins.link;
     }

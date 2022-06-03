@@ -57,7 +57,6 @@
             box-shadow: 6px 6px 4px rgba(36, 36, 36, 0.15);
         }
     }
-    
     &__background1 {
         background-image: url(/images/background/navigation-spring-small.JPG);
         background-position: center;
@@ -91,7 +90,6 @@
     text-align: center;
     margin: 0;
     padding: 20px 10px 0 10px;
-   
     @include mixins.tablet{
         font-size: 24px;
         padding-top: 40px;

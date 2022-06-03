@@ -72,7 +72,8 @@
         display: none;
         @include mixins.desktop{
             display: flex;
-            grid-area: whitespace;        }
+            grid-area: whitespace;
+        }
     }
     &__logo {
         display: flex;

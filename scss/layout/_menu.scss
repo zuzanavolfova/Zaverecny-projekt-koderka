@@ -4,46 +4,43 @@
 //UI menu
 
 // screen mobile menu
-.menu-mobile
-.menu-mobile__button {
-    padding: 5px 10px;
-    background-color: colors.$color-primary;
-    color: white;
-    border: 0;
-    border-radius: 4px;
-    font-size: 20px;
-    grid-area: menu;
-}
-
-.menu-mobile__list {
-    display: none;
-    padding: 10px;
-    margin: 0;
-    width: 200px;
-    border-radius: 4px;
-    box-shadow: 1px 2px 4px grey;
-    background-color: white;
-    position: absolute;
-    z-index: 1;
-}
-
-.menu-mobile__item {
-   text-decoration: none;
-   color: colors.$color-text;
-   list-style: none;
-}
-
-.menu-mobile__item a {
-    text-decoration: none;
-    color: colors.$color-text;
-    display: flex;
-    align-items: center;
-}
-
-.menu-mobile__icon {
-    padding: 10px 10px;
-    margin-right: 10px;
-    width: 46px;
+.menu-mobile{
+    &__button {
+        padding: 5px 10px;
+        background-color: colors.$color-primary;
+        color: white;
+        border: 0;
+        border-radius: 4px;
+        font-size: 20px;
+        grid-area: menu;
+    }
+    &__list {
+        display: none;
+        padding: 10px;
+        margin: 0;
+        width: 200px;
+        border-radius: 4px;
+        box-shadow: 1px 2px 4px grey;
+        background-color: white;
+        position: absolute;
+        z-index: 1;
+    }
+    &__item {
+        text-decoration: none;
+        color: colors.$color-text;
+        list-style: none;
+    }
+    &__item a {
+        text-decoration: none;
+        color: colors.$color-text;
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        padding: 10px 10px;
+        margin-right: 10px;
+        width: 46px;
+    }
 }
 
 // screen desktop menu
@@ -63,13 +60,10 @@
         list-style: none;
         padding-top: 20px;
     }
-}
-
-.menu-desktop__item--active .menu-desktop__link {
-    border-bottom: 2px solid colors.$color-border-light;
-}
-
-.menu-desktop__item a {
+    &__item--active .menu-desktop__link {
+        border-bottom: 2px solid colors.$color-border-light;
+    }
+    &__item a {
         width: 100%;
         color: colors.$color-primary;
         font-weight: 500;
@@ -78,11 +72,11 @@
         background-color: white;
         padding: 5px 0px;
         // border-radius: 4px;
-    @include mixins.desktop {
-        font-size: 20px;
+        @include mixins.desktop {
+            font-size: 20px;
+        }
+        &:hover {
+            border-bottom: 2px solid colors.$color-border-light;
+        }    
     }
-
-    &:hover {
-        border-bottom: 2px solid colors.$color-border-light;
-    }    
 }

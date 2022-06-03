@@ -36,7 +36,6 @@
         }
     }
     &__description {
-
         @include mixins.tablet {
             margin-left: 20px;
         }
@@ -73,7 +72,6 @@
             display: flex;
         }
     }
-  
     &__text-layout {
         @include mixins.tablet {
             flex-basis: 100%;
@@ -92,7 +90,6 @@
         @include mixins.desktop { 
         grid-area: image;
         }
-       
     }
     &__image-small {
         flex-basis: calc(50% - 20px);
@@ -104,7 +101,6 @@
             flex-basis: 100%;
         }
     }
-
     &__title {
         font-weight: 400;
         margin-top: 20px;
@@ -126,7 +122,6 @@
         @include mixins.desktop {
             order:3;
         }
-
     }
 }
 
