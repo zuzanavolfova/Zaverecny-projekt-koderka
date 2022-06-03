@@ -655,6 +655,11 @@ h1 {
 .search__title {
   color: rgb(60, 60, 60);
 }
+.search__text {
+  padding: 10px;
+  line-height: 1.6;
+  border: 1px solid #0097A7;
+}
 
 .tips__title {
   margin-top: 20px;
