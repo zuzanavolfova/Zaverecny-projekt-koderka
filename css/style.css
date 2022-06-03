@@ -12,7 +12,7 @@ body {
 }
 @media screen and (min-width: 1400px) {
   body {
-    background-image: url(/images/background/background-butterfly.png);
+    background-image: url(/images/background/background-butterfly-1.png);
     background-size: cover;
   }
 }
@@ -154,6 +154,7 @@ h1 {
 }
 
 .header {
+  padding: 20px 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -164,11 +165,6 @@ h1 {
   align-items: center;
   grid-template-columns: 50px 1fr 20px;
   grid-template-areas: "menu logo search";
-  background-image: url(/images/background/background-header.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 20px 20px;
 }
 @media screen and (min-width: 650px) {
   .header {
@@ -191,7 +187,6 @@ h1 {
 }
 @media screen and (min-width: 900px) {
   .header {
-    padding: 40px;
     grid-template-columns: 700px 1fr 120px 80px;
     grid-template-rows: 60px 40px;
     grid-template-areas: "logo logo       logo  logo  " "menu whitespace about search";
@@ -227,6 +222,8 @@ h1 {
   }
 }
 .header__logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: rgb(60, 60, 60);
   padding: 0px 20px;
@@ -247,6 +244,32 @@ h1 {
   .header__logo {
     justify-self: center;
     font-size: 42px;
+  }
+}
+.header__butterfly {
+  display: none;
+  width: 50px;
+  position: relative;
+  right: -20px;
+}
+@media screen and (min-width: 500px) {
+  .header__butterfly {
+    display: flex;
+  }
+}
+@media screen and (min-width: 650px) {
+  .header__butterfly {
+    padding-top: 20px;
+    width: 80px;
+    right: -60px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header__butterfly {
+    padding-top: 20px;
+    width: 120px;
+    right: -60px;
+    top: 20px;
   }
 }
 .header__search {
