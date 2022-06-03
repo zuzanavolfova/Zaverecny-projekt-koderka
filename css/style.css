@@ -411,7 +411,7 @@ h1 {
 }
 @media screen and (min-width: 650px) {
   .title-list {
-    padding-top: 20px;
+    padding-top: 40px;
   }
 }
 
