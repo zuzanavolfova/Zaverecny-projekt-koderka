@@ -79,7 +79,7 @@
             "material":"tvrdý papír libovolného rozměru. Temperové barvy, jablko nebo hruška nebo citron",
             "preparation":"pozorujte jak na stromě dozrává ovoce, jak padá na zem a na zemi hnije. Pozorujte jeho barvy.",
             "text": "<p><strong>1.Nakreslete na papír zavařovací sklenici.</strong> Můžete ji i obkreslit z přiložené šablony.</p><p><strong>2. Rozkrojte ovoce na polovinu.</strong></p><p><strong>3. Potřete ovoce barvou.</strong> Můžete použít jednu barvu nebo více barev.</p><p><strong>4. Obtiskněte ovoce na papír.</strong> Můžete otisknout jednou a pak znovu natřít nebo obtisknout víckrát.<p><strong>Pozorujte jak se barvy do sebe smíchaly</strong>, jaká vzniká struktura obtisku.",
-            "images": [""]
+            "images": ["zavarovani-2.jpg"]
             },
             {
                 "category": "autumn",
@@ -107,7 +107,7 @@
         "material":"tvrdý papír libovolné velikosti, zmizík, inkoust.",
         "preparation":"povídejte si s dětmi o zimě, o vločkách, o větru. Pozorujte jak venku sněží, pozorujte pohyb vloček. Udělejte sněhovou kouli a podívejte se na její povrchovou strukturu.",
         "text": "<p><strong>1. Papír namalujte inkoustem,</strong> někde naneste více barvy, jinde méně.</p><p><strong>2.Nechte papír pořádně uschnout.</strong></p><p><strong>3. Zmizíkem malujte pohyb vloček ve vánici.</strong> Zamyslete se jakým směrem vločky padají, jak si s nimi vítr pohrává Využijte spirály, vlnky, čáry. Budete-li chtít, domalujte vločky nebo je vystřihněte z papíru a nalepte.</p>",
-        "images": [""]
+        "images": ["vanice-1.jpg","vanice-2.jpg","vanice-3.jpg","vanice-4.jpg"]
         },
         {
         "category": "winter",
@@ -128,12 +128,12 @@
         "technique": "tuš, kulička (hopík)",
         "duration": "40 min",
         "age": "od 2 let",
-        "profileImage": "papir.jpg",
+        "profileImage": "papir-7.jpg",
         "sablona": " ",
         "material":"balící papír, tuš, kulička",
         "preparation":"povídejte si s dětmi o dárcích, proč někoho obdarováváme nebo o Ježíškovi. Tip: pokud děti věří na Ježíška, vytvořte papír a večer jej dejte za okno. Ježíšek si jej vyzvedne a pak do něj zabalí dárky.",
         "text": "<p><strong>1. Přehněte balící papír cca 3 cm na každé straně a rohy sešijte sešívačkou nebo přelepte lepící páskou (viz obrázek).</strong> Papír můžete taky položit do nízké veliké krabice.</p><p><strong>2. Kuličku namočte do barvy a rozkutálejte ji po papíru.</strong> Pohybujte papírem, aby se kulička pohybovala různým směrem. Máte-li skákací kuličku, můžete ji i mírně hodit a pozorovat otisky. Je dobré mít více kuliček s různými povrchy. Pozorujte dráhy kuliček můžou být celistvé, přerušované, tenké, tlusté. Nebojte se udělat hodně pestrý papír s velkým množstvím čar.</p>",
-        "images": [""]
+        "images": ["papir-1.jpg","papir-2.jpg","papir-3.jpg","papir-4.jpg","papir-5.jpg","papir-6.jpg","papir-8.jpg","papir-9.jpg"]
         }
     ]
 }
