@@ -42,6 +42,9 @@ h1 {
     &__icon {
         margin-right: 10px;
     }
+    @include mixins.tablet {
+        display: none;
+    }
 }
 
 .bold

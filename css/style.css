@@ -40,6 +40,11 @@ h1 {
 .back__icon {
   margin-right: 10px;
 }
+@media screen and (min-width: 650px) {
+  .back {
+    display: none;
+  }
+}
 
 .bold {
   font-weight: bold;
