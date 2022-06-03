@@ -441,12 +441,12 @@ h1 {
 .list__part td {
   font-size: 14px;
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
   padding-left: 5px;
 }
 .list__name {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .list__link {
   text-decoration: none;
