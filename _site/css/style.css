@@ -166,6 +166,7 @@ h1 {
   .header {
     position: static;
     justify-items: start;
+    margin-bottom: 30px;
     grid-template-columns: 1fr 120px 80px;
     grid-template-rows: 60px 40px;
     grid-template-areas: "logo about search" "menu menu menu";
