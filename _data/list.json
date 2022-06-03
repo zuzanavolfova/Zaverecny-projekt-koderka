@@ -117,10 +117,10 @@
         "age": "od 3 let",
         "profileImage": "ohnostroj.jpg",
         "sablona": " ",
-        "material":"tvrdý papír, libovolné velikosti, brčko, tuš",
+        "material":"tvrdý papír libovolné velikosti, brčko, tuš",
         "preparation":"povídejte si s dětmi o konci roku, o ročním koloběhu, o barvách a zvucích typických pro jednotlivé roční období. Povídejte si o oslavě konce roku a o ohňostrojích. Zkuste vymyslet nejen jakou mají barvu, ale i jaký mají zvuk.",
-        "text": "<p><strong>1. Na papír udělejte velikou kaňku tuší.</strong> Můžete použít třeba tlustý štětec.</p><p><strong>2. Ponořte slámku do kaňky pod cca 30-45 stupňovým úhlem a silně foukněte.</strong> Vyzkoušejte různé úhly položení slámky. Nastavte slámku na konec rozprsknuté barvy a znovu foukněte. Můžete taky ještě přidat barvu.</p><p><strong>3. Udělejte novou kaňku vedle první a opět foukněte.</strong> Pozorujte, jak se ohňostroj rozprskne, jak se některé barvy do sebe vpíjí a vzniknou nové. Řekněte si, která rachejtle asi udělala největší rámus.</p>",
-        "images": [""]
+        "text": "<p><strong>1. Na papír udělejte velikou kaňku tuší.</strong> Můžete použít třeba tlustý štětec.</p><p><strong>2. Ponořte brčko do kaňky pod cca 30-45 stupňovým úhlem a silně foukněte.</strong> Vyzkoušejte různé úhly položení brčka. Nastavte brčko na konec rozprsknuté barvy a znovu foukněte. Před tím než znovu fouknete můžete přidat na konec prskance barvu.</p><p><strong>3. Udělejte novou kaňku vedle první a opět foukněte.</strong> Pozorujte, jak se ohňostroj rozprskne, jak se některé barvy do sebe vpíjí a vzniknou nové. Řekněte si, která rachejtle asi udělala největší rámus.</p>",
+        "images": ["ohnostroj-1.jpg","ohnostroj-2.jpg","ohnostroj-3.jpg","ohnostroj-4.jpg","ohnostroj-5.jpg","ohnostroj-6.jpg"]
         },
         {
         "category": "winter",
