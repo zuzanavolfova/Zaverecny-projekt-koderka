@@ -6,7 +6,9 @@
     padding-left: 20px;
     text-align: center;
     font-weight: 400;
-    // color: colors.$color-logo;
+    @include mixins.tablet {
+        padding-top: 20px;
+    }
 }
 .list {
     padding: 20px;

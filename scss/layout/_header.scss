@@ -51,7 +51,7 @@
             "logo logo       logo  logo  "
             "menu whitespace about search";
     }
-     &__about {
+     &__tips {
         display:none;
         & a {
             color: colors.$color-primary;
@@ -63,6 +63,7 @@
             grid-area: about;
         }
         @include mixins.desktop{
+            margin-top: 20px;
             align-self: end;
             font-size: 20px;
         }
@@ -90,6 +91,7 @@
             font-size: 32px;
         }
         @include mixins.desktop{
+            padding-top: 20px;
             justify-self: center;
             font-size: 42px;
         }
@@ -116,14 +118,11 @@
     }
     &__search {
         width: 40px;
-        grid-area: search;       
+        grid-area: search;
+        @include mixins.desktop{
+            margin-top: 20px;
+        }
     }
-
-    // background-image: url(/images/background/background-header.png);
-    // background-size:cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    
 }
 
 
