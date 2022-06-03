@@ -598,6 +598,7 @@ h1 {
 .instruction__image-small {
   flex-basis: calc(50% - 20px);
   width: 100%;
+  border-radius: 4px;
 }
 @media screen and (min-width: 650px) {
   .instruction__image-small {
