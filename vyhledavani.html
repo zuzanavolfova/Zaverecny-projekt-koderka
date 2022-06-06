@@ -35,7 +35,8 @@ title: Vyhledávání
             </div>
         </a>
     </div>
-    {% endfor %}{% for itemSummer in list.summer %}
+    {% endfor %}
+    {% for itemSummer in list.summer %}
     <div class="list__item">
         <a class="list__link" href="/leto/{{itemSummer.name | slug }}/">
             <div class="list__description"> 
@@ -60,7 +61,8 @@ title: Vyhledávání
             </div>
         </a>
     </div>
-    {% endfor %} {% for itemAutumn in list.autumn %}
+    {% endfor %}
+    {% for itemAutumn in list.autumn %}
 
     <div class="list__item">
         <a class="list__link" href="/podzim/{{itemAutumn.name | slug }}/">
