@@ -54,6 +54,10 @@ h1 {
   padding: 10px 20px;
   border-top: 1px solid #0097A7;
 }
+.footer__email {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
 
 .footer__contact p {
   margin: 0;
