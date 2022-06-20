@@ -684,10 +684,12 @@ h1 {
 .tips__close {
   display: none;
   font-size: 20px;
+  color: rgb(123, 123, 123);
 }
 
 .tips__open {
   font-size: 20px;
+  color: rgb(123, 123, 123);
 }
 
 .check {

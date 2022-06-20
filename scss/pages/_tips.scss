@@ -22,9 +22,11 @@
 .tips__close {
     display: none;
     font-size: 20px;
+    color: colors.$color-logo;
 }
 .tips__open {
     font-size: 20px;
+    color: colors.$color-logo;
 }
 .check {
     position: absolute;
