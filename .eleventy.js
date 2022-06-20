@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("download");
 
     eleventyConfig.addPassthroughCopy("javaScript");
+    eleventyConfig.addPassthroughCopy("favicon");
 
   return {
     // možné formáty šablon
