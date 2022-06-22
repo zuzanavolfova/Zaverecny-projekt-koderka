@@ -184,8 +184,9 @@ h1 {
 @media screen and (min-width: 900px) {
   .header {
     grid-template-columns: 700px 1fr 120px 80px;
-    grid-template-rows: 60px 40px;
+    grid-template-rows: auto auto;
     grid-template-areas: "logo logo       logo  logo  " "menu whitespace about search";
+    align-content: center;
   }
 }
 .header__tips {
@@ -224,6 +225,7 @@ h1 {
   text-decoration: none;
   color: rgb(60, 60, 60);
   padding: 0px 20px;
+  margin: 20px;
   grid-area: logo;
   font-size: 26px;
   font-weight: 100;
