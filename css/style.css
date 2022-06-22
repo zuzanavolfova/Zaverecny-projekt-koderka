@@ -683,13 +683,15 @@ h1 {
 
 .tips__close {
   display: none;
+  margin: 10px;
   font-size: 20px;
-  color: rgb(123, 123, 123);
+  color: #0097A7;
 }
 
 .tips__open {
+  margin: 10px;
   font-size: 20px;
-  color: rgb(123, 123, 123);
+  color: #0097A7;
 }
 
 .check {

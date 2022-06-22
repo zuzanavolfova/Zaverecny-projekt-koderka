@@ -21,12 +21,14 @@
 }
 .tips__close {
     display: none;
+    margin: 10px;
     font-size: 20px;
-    color: colors.$color-logo;
+    color: colors.$color-primary;
 }
 .tips__open {
+    margin: 10px;
     font-size: 20px;
-    color: colors.$color-logo;
+    color: colors.$color-primary;
 }
 .check {
     position: absolute;
