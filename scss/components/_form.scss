@@ -1,0 +1,9 @@
+@use '../abstracts/mixins';
+@use '../base/colors';
+
+.form {
+    margin-top: 20px;
+    &__label {
+    color: colors.$color-text;
+    }
+}

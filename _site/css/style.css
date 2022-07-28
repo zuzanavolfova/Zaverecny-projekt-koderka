@@ -293,6 +293,28 @@ h1 {
   width: 100%;
 }
 
+.form {
+  margin-top: 20px;
+}
+.form__label {
+  color: rgb(60, 60, 60);
+}
+
+.button {
+  border: none;
+  background-color: #0097A7;
+  color: white;
+  font-weight: bolder;
+  border: 2px solid #0097A7;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.button:hover {
+  background-color: white;
+  color: #0097A7;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -739,4 +761,4 @@ h1 {
 }
 .check4:checked + label .tips__open {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}

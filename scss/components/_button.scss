@@ -1,0 +1,17 @@
+@use '../abstracts/mixins';
+@use '../base/colors';
+
+.button {
+    border: none;
+    background-color: colors.$color-primary;
+    color: white;
+    font-weight:bolder;
+    border: 2px solid colors.$color-primary;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    &:hover {
+        background-color: white;
+        color: colors.$color-primary;
+    }
+}
