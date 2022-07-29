@@ -29,6 +29,7 @@
     &__form {
         @include mixins.desktop {
             grid-area: form;
+        }
     }
     &__bold {
         font-weight: bold;
