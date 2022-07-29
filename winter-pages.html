@@ -43,7 +43,7 @@ permalink: "zima/{{ itemWinter.name | slug }}/"
         <a data-fslightbox href="/images/large/{{imageWinter}}"><img class="instruction__image-small" src="/images/small/{{imageWinter}}" alt="navod"></a>
         {% endfor %}
     </section>
-    <section class="form">
+    <section class="instruction__form form">
         <form class="form__inputs" method="post" action="https://submit-form.com/Gya9bqRe">
             <input type="hidden" name="_redirect" value="https://tvoreni-pro-motylky.netlify.app/zima/{{ itemWinter.name | slug }}/">
             <input type="hidden" name="{{itemWinter.name}}">
@@ -52,7 +52,7 @@ permalink: "zima/{{ itemWinter.name | slug }}/"
                 <textarea class="form__text" name="text" id="text" cols="40"></textarea>
             </label>
             <button class="button" type="submit">
-                Uložit odpověď
+                Odeslat odpověď
             </button>
         </form>
 
