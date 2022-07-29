@@ -54,9 +54,11 @@ h1 {
   padding: 10px 20px;
   border-top: 1px solid #0097A7;
 }
-.footer__email {
+.footer__email, .footer__web, .footer__linkedIn {
   text-decoration: none;
   color: rgb(60, 60, 60);
+  display: block;
+  line-height: 1.5;
 }
 
 .footer__contact p {
