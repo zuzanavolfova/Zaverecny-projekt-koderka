@@ -22,8 +22,13 @@
         grid-template-areas: 
         "image-main basic-info"
         "image-main text"
-        "image      text";
+        "image      text"
+        "image      form";
         gap: 20px;
+    }
+    &__form {
+        @include mixins.desktop {
+            grid-area: form;
     }
     &__bold {
         font-weight: bold;
@@ -91,6 +96,7 @@
         grid-area: image;
         }
     }
+  
     &__image-small {
         flex-basis: calc(50% - 20px);
         width: 100%;
@@ -140,4 +146,3 @@
         background-color: colors.$color-primary;
     }
 }
-

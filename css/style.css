@@ -533,7 +533,7 @@ h1 {
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "image-main basic-info" "image-main text" "image      text";
+    grid-template-areas: "image-main basic-info" "image-main text" "image      text" "image      form";
     gap: 20px;
   }
 }
