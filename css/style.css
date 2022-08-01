@@ -537,6 +537,12 @@ h1 {
     gap: 20px;
   }
 }
+@media screen and (min-width: 900px) {
+  .instruction__form {
+    grid-area: form;
+    display: block;
+  }
+}
 .instruction__bold {
   font-weight: bold;
   margin: 10px 0 0 0;

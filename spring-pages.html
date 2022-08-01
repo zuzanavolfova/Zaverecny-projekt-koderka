@@ -26,7 +26,11 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
                     <p class="instruction__info">{{itemSpring.age}}</p>
                 </div>
             </div>
-            <div>
+            <div class="pokus">
+            <p class="instruction__material"><span class="bold">Materiál: </span>{{itemSpring.material | safe }}</p>
+        <p class="instruction__priprava"><span class="bold">Příprava: </span>{{itemSpring.preparation | safe }}</p>
+    </div>    
+        <div>
                 {% if itemSpring.sablona !== " " %}
                 <a class="download" href="/images/templates/{{itemSpring.sablona}}" download="sablona-{{itemSpring.name}}"> Stáhnout šablonu</a>
                 {% endif %}
@@ -34,8 +38,7 @@ permalink: "jaro/{{ itemSpring.name | slug }}/"
     </section> 
     <section class="instruction__text-layout">
         <h2 class="instruction__title">Návod</h2>
-        <p class="instruction__material"><span class="bold">Materiál: </span>{{itemSpring.material | safe }}</p>
-        <p class="instruction__priprava"><span class="bold">Příprava: </span>{{itemSpring.preparation | safe }}</p>
+        
         <div class="instruction__text">{{itemSpring.text | safe }}</div>
     </section>
     <section class="instruction__images" >
